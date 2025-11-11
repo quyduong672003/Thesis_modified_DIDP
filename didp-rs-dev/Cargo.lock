@@ -123,17 +123,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "didppy"
-version = "0.7.2"
-dependencies = [
- "dypdl",
- "dypdl-heuristic-search",
- "pyo3",
- "pyo3-build-config",
- "rustc-hash",
-]
-
-[[package]]
 name = "dypdl"
 version = "0.7.2"
 dependencies = [
@@ -271,6 +260,17 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "5a634b1c61a95585bd15607c6ab0c4e5b226e695ff2800ba0cdccddf208c406c"
 dependencies = [
  "autocfg",
+]
+
+[[package]]
+name = "modified_didppy"
+version = "0.7.2-a"
+dependencies = [
+ "dypdl",
+ "dypdl-heuristic-search",
+ "pyo3",
+ "pyo3-build-config",
+ "rustc-hash",
 ]
 
 [[package]]

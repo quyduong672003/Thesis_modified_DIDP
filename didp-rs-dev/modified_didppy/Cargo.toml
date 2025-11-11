@@ -1,18 +1,24 @@
 [package]
-name = "didppy"
-version = "0.7.2"
+name = "modified_didppy"
+version = "0.7.2-a"
 edition = "2021"
 rust-version = "1.65"
 description = "Python interface for Dynamic Programming Description Language (DyPDL) and DyPDL solvers."
 license = "MIT OR Apache-2.0"
-#Modified_authors =["Nguyen Pham Quy Duong"]
-#Original_authors = ["Ryo Kuroiwa <ryo.kuroiwa@mail.utoronto.ca>"]
+
+# This is the standard way to list all authors
+authors = [
+    "Ryo Kuroiwa <ryo.kuroiwa@mail.utoronto.ca>", 
+    "Nguyen Pham Quy Duong"
+]
+
 homepage = "https://didp.ai"
 repository = "https://github.com/domain-independent-dp/didp-rs"
 
+
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 [lib]
-name = "didppy"
+name = "modified_didppy"
 crate-type = ["cdylib"]
 
 [dependencies]

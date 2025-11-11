@@ -1,0 +1,2 @@
+#Run the below command in terminal
+pip freeze > requirements.txt

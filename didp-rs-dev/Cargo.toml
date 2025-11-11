@@ -1,5 +1,5 @@
 [workspace]
-members = ["dypdl", "didp-yaml", "dypdl-heuristic-search", "didppy"]
+members = ["dypdl", "didp-yaml", "dypdl-heuristic-search", "modified_didppy"]
 resolver = "2"
 
 [profile.release]
