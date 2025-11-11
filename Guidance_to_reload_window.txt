@@ -1,0 +1,5 @@
+If the refresh button doesn't work, the 100% reliable fix is to reload the VS Code window.
+
+1. Press Ctrl+Shift+P to open the Command Palette.
+
+2. Type Developer: Reload Window and press Enter.

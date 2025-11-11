@@ -1,0 +1,11 @@
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+.\venv\Scripts\Activate.ps1
+
+#Deploy modified DIDP
+pip install maturin
+cd didp-rs-dev\didppy
+maturin develop
+
+#Changing directory
+cd ..\..
+(This command means "go up one folder" (..), and then "go up one more folder" (..)).
