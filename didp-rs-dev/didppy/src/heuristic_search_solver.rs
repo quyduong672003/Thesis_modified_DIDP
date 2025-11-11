@@ -2,25 +2,25 @@
 
 mod acps;
 mod apps;
-mod beam_parallelization_method;
-mod breadth_first_search;
+pub mod beam_parallelization_method;
+pub mod breadth_first_search;
 mod caasdy;
-mod cabs;
+pub mod cabs;
 mod cbfs;
 mod dbdfs;
 mod dd_lns;
 mod dfbb;
-mod expression_beam_search;
-mod f_operator;
-mod forward_recursion;
+pub mod expression_beam_search;
+pub mod f_operator;
+pub mod forward_recursion;
 mod lnbs;
 mod user_priority_acps;
 mod user_priority_apps;
 mod user_priority_caasdy;
-mod user_priority_cabs;
-mod user_priority_evaluator;
+pub mod user_priority_cabs;
+pub mod user_priority_evaluator;
 mod weighted_astar;
-mod wrapped_solver;
+pub mod wrapped_solver;
 
 pub use acps::AcpsPy;
 pub use apps::AppsPy;

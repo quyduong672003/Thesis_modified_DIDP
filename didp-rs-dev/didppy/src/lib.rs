@@ -1,7 +1,8 @@
 use pyo3::prelude::*;
 
-mod heuristic_search_solver;
-mod model;
+pub mod heuristic_search_solver;
+pub mod model;
+pub mod Customized_dual_bound_heuristics;
 
 pub use model::ModelPy;
 
@@ -70,6 +71,10 @@ fn didppy(_: Python, m: &PyModule) -> PyResult<()> {
     m.add_class::<heuristic_search_solver::UserPriorityCaasdyPy>()?;
     m.add_class::<heuristic_search_solver::UserPriorityAcpsPy>()?;
     m.add_class::<heuristic_search_solver::UserPriorityAppsPy>()?;
+
+    // --- ADD THIS LINE ---
+    m.add_class::<Customized_dual_bound_heuristics::CustomDualBoundCabsPy>()?;
+    // --- END ---
     m.add("__version__", env!("CARGO_PKG_VERSION"))?;
     Ok(())
 }
