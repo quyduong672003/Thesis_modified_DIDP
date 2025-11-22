@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=C:\Users\ACER\Desktop\Code\0.Thesis implementation\DIDP_custom_search_guidance_local\Thesis_modified_DIDP\venv
+set VIRTUAL_ENV=C:\Users\ACER\Desktop\Code\0.Thesis implementation\2_DIDP_custom_search_guidance_local\Thesis_modified_DIDP\venv
 
 if not defined PROMPT set PROMPT=$P$G
 

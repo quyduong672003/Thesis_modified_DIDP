@@ -35,7 +35,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\ACER\Desktop\Code\0.Thesis implementation\DIDP_custom_search_guidance_local\Thesis_modified_DIDP\venv"
+VIRTUAL_ENV="C:\Users\ACER\Desktop\Code\0.Thesis implementation\2_DIDP_custom_search_guidance_local\Thesis_modified_DIDP\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

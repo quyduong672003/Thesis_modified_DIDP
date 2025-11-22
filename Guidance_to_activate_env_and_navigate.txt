@@ -1,10 +1,12 @@
 #Activation of environment
+cd 'C:\Users\ACER\Desktop\Code\0.Thesis implementation\2_DIDP_custom_search_guidance_local\Thesis_modified_DIDP'
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
 .\venv\Scripts\Activate.ps1
 
 #Deploy modified DIDP
-pip install maturin
-cd didp-rs-dev\didppy
+pip install maturin (if not install before)
+cd 'C:\Users\ACER\Desktop\Code\0.Thesis implementation\2_DIDP_custom_search_guidance_local\Thesis_modified_DIDP'
+cd didp-rs-no-transition-dominance\modified_didppy
 maturin develop
 
 #Changing directory

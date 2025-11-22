@@ -1,1 +1,3 @@
-/didp-rs-dev/target
+# Ignore all Rust build artifacts
+target/
+**/*.pdb

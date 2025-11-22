@@ -1,0 +1,127 @@
+RUST MODULE & PATH REFERENCE GUIDE
+====================================
+
+This note explains how paths work in Rust — how to refer to items (functions, structs, etc.)
+across modules, folders, and crates.
+
+──────────────────────────────
+1. BASIC CONCEPT
+──────────────────────────────
+Each Rust crate (library or binary) has a "module tree".
+Paths are used to refer to items in that tree, like file paths in a folder system.
+
+Example structure:
+src/
+ ├── lib.rs
+ ├── math.rs
+ └── utils/
+      ├── mod.rs
+      └── string_tools.rs
+
+──────────────────────────────
+2. DECLARING MODULES
+──────────────────────────────
+Inside `lib.rs` (the crate root):
+
+    pub mod math;        // exposes src/math.rs
+    pub mod utils;       // exposes src/utils/mod.rs
+
+Inside `utils/mod.rs`:
+
+    pub mod string_tools; // exposes src/utils/string_tools.rs
+
+──────────────────────────────
+3. ACCESSING ITEMS (Paths)
+──────────────────────────────
+
+▶ Absolute path (from crate root):
+    crate::math::add(2, 3);
+    crate::utils::string_tools::capitalize("hello");
+
+▶ Relative path (from current module):
+    super::math::add(2, 3);      // go up one level
+    self::helper_function();     // current module
+    string_tools::capitalize();  // same-level submodule
+
+──────────────────────────────
+4. PUB VS PRIVACY
+──────────────────────────────
+By default, everything in a module is private.
+Use `pub` to make it visible outside its parent module.
+
+Example:
+    // src/math.rs
+    pub fn add(a: i32, b: i32) -> i32 { a + b }
+    fn hidden_sub(a: i32, b: i32) -> i32 { a - b }
+
+──────────────────────────────
+5. EXAMPLES OF USE
+──────────────────────────────
+
+Example 1: Use math.rs from lib.rs
+----------------------------------
+lib.rs:
+    pub mod math;
+
+math.rs:
+    pub fn square(x: i32) -> i32 { x * x }
+
+main.rs:
+    use didppy::math::square;
+    fn main() {
+        println!("{}", square(4));  // prints 16
+    }
+
+Example 2: Nested module access
+----------------------------------
+utils/mod.rs:
+    pub mod string_tools;
+
+utils/string_tools.rs:
+    pub fn capitalize(s: &str) -> String {
+        let mut c = s.chars();
+        match c.next() {
+            None => String::new(),
+            Some(first) => first.to_uppercase().collect::<String>() + c.as_str(),
+        }
+    }
+
+lib.rs:
+    pub mod utils;
+
+main.rs:
+    use didppy::utils::string_tools::capitalize;
+    fn main() {
+        println!("{}", capitalize("rust"));  // prints "Rust"
+    }
+
+──────────────────────────────
+6. INTEGRATION TESTS (tests/ folder)
+──────────────────────────────
+Tests in the `tests/` directory are separate crates.
+They access your library as if it’s an external dependency.
+
+Example layout:
+src/
+ └── lib.rs
+tests/
+ └── custom_eval.rs
+
+In `tests/custom_eval.rs`:
+    use didppy::Customized_dual_bound_heuristics::evaluate_dual_bound_combined;
+
+──────────────────────────────
+7. SUMMARY
+──────────────────────────────
+- Absolute path: starts from `crate::`
+- Relative path: uses `self::`, `super::`, or local module name
+- `pub` exposes items for external use
+- Files correspond to modules, folders correspond to nested modules
+- Integration tests behave like external users of the library
+
+──────────────────────────────
+REFERENCE COMMANDS
+──────────────────────────────
+cargo test -- --nocapture      # Run all tests and show print output
+cargo test my_test_name        # Run one specific test
+cargo run                      # Run binary crate (if main.rs exists)
