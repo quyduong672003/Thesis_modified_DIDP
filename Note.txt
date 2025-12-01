@@ -1,0 +1,16 @@
+A. Create a Function to identify terminal and function:
+*Input: a chromosome dict like {[a1, h1, multiply, h2, add], fitness}
+*Process: Check to notify that position 0 - > 2 is 1 terminal, 3 is another terminal
+*Output: 
+**Terminals location that must go together (imagine like 0 -> 2 is a tuple, location 3 is another tuple, and other location...)
+** Functions index of the chromosome (imagine like 0 -> end is a tuple of function add => if crossover it have to watch out to swap the whole tree)
+
+B. Sub-tree crossover, most important thing is crossover but still create valid chromosome:
+1. Pick 2 parents: parent_1, parent_2
+2. Identify the terminal location and function index for each parent
+3. Put out probability to crossover (90% crossover functions, 10% is terminal)
+4. Choose crossover type, and crossover point for each parent. 
+* P1: {[a1, h1, multiply, h2, add], fitness} => choose crossover terminal h2 => index 3 => maintain the list from backward [a1, h1, multiply, add]
+* P2: {[h1, h2, multiply, h3, add], fitness} => choose crossover function => choose the one belong in the function index specified in previous steps => []
+5. Process the crossover to maintain validity. => [a1, h1, multiply, *h1, h2, multiply*, add]
+

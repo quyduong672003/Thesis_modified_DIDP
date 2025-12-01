@@ -1,3 +1,4 @@
 # Ignore all Rust build artifacts
 target/
 **/*.pdb
+venv/
