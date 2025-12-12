@@ -1,5 +1,5 @@
-// Use the new evaluator from our module
-use super::customized_evaluator::create_combined_evaluator_with_py_func;
+// 🟢 Import TimingStats explicitly
+use super::customized_evaluator::{create_combined_evaluator_with_py_func, TimingStats};
 
 // Use the correct, now public, paths
 use crate::heuristic_search_solver::user_priority_evaluator::create_default_g_evaluator_vectors;
@@ -13,13 +13,7 @@ use dypdl_heuristic_search::{
     create_user_priority_cabs, BeamSearchParameters, CabsParameters, FEvaluatorType, Parameters,
     Search, UserEvaluators,
 };
-//
-// THIS IS THE FIX: Add the missing import
-//
 use dypdl_heuristic_search::search_algorithm::StateInRegistry;
-//
-// END OF FIX
-//
 use pyo3::prelude::*;
 use std::rc::Rc;
 
@@ -27,15 +21,18 @@ use std::rc::Rc;
 type HBuilder = Box<dyn Fn(&StateInRegistry) -> Option<OrderedContinuous>>;
 
 #[pyclass(unsendable, name = "CustomDualBoundCABSv1")]
-pub struct CustomDualBoundCabsPy(
-    WrappedSolver<Box<dyn Search<Integer>>, Box<dyn Search<OrderedContinuous>>>,
-);
+pub struct CustomDualBoundCabsPy {
+    // 🟢 Named struct fields
+    solver: WrappedSolver<Box<dyn Search<Integer>>, Box<dyn Search<OrderedContinuous>>>,
+    // 🟢 Store the guard here
+    _guard: TimingStats,
+}
 
 #[pymethods]
 impl CustomDualBoundCabsPy {
     #[new]
     #[pyo3(
-        text_signature = "(model, dual_bound_func, f_operator=didppy.FOperator.Plus, primal_bound=None, time_limit=None, quiet=False, initial_beam_size=1, keep_all_layers=False, max_beam_size=None, expansion_limit=None)"
+        text_signature = "(model, dual_bound_func, f_operator=didppy.FOperator.Plus, primal_bound=None, time_limit=None, quiet=False, initial_beam_size=1, keep_all_layers=False, max_beam_size=None, expansion_limit=None, print_timing_stats=False)"
     )]
     #[pyo3(signature = (
         model,
@@ -48,6 +45,7 @@ impl CustomDualBoundCabsPy {
         keep_all_layers = false,
         max_beam_size = None,
         expansion_limit = None,
+        print_timing_stats = false, // 🟢 Default false
     ))]
     #[allow(clippy::too_many_arguments)]
     fn new(
@@ -61,6 +59,7 @@ impl CustomDualBoundCabsPy {
         keep_all_layers: bool,
         max_beam_size: Option<usize>,
         expansion_limit: Option<usize>,
+        print_timing_stats: bool, // 🟢 New argument
     ) -> PyResult<CustomDualBoundCabsPy> {
         if !quiet {
             println!(
@@ -77,26 +76,27 @@ impl CustomDualBoundCabsPy {
         let (forced_g_evaluators, g_evaluators) =
             create_default_g_evaluator_vectors(&rust_model);
 
-        // We must Box::new() the result of the `if/else` to erase the concrete opaque types
-        // and give the `h_evaluator` variable a single, consistent type: HBuilder
-        let h_evaluator: HBuilder = if float_cost {
-            // Model cost is float (T=OrderedContinuous)
-            Box::new(create_combined_evaluator_with_py_func::<OrderedContinuous>(
+        // 🟢 Create Evaluator AND Guard
+        let (h_evaluator, guard): (HBuilder, TimingStats) = if float_cost {
+            let (closure, g) = create_combined_evaluator_with_py_func::<OrderedContinuous>(
                 rust_model.clone(),
                 dual_bound_func,
-            ))
+                print_timing_stats,
+            );
+            (Box::new(closure), g)
         } else {
-            // Model cost is int (T=Integer)
-            Box::new(create_combined_evaluator_with_py_func::<Integer>(
+            let (closure, g) = create_combined_evaluator_with_py_func::<Integer>(
                 rust_model.clone(),
                 dual_bound_func,
-            ))
+                print_timing_stats,
+            );
+            (Box::new(closure), g)
         };
 
         let user_evaluators = UserEvaluators {
             forced_g_evaluators,
             g_evaluators,
-            h_evaluator, // This now has a single, concrete type
+            h_evaluator, 
             f_evaluator_type,
         };
 
@@ -131,9 +131,12 @@ impl CustomDualBoundCabsPy {
                 user_evaluators,
             );
 
-            Ok(CustomDualBoundCabsPy(WrappedSolver::Float(solver)))
+            // 🟢 Return struct with named fields
+            Ok(CustomDualBoundCabsPy {
+                solver: WrappedSolver::Float(solver),
+                _guard: guard, 
+            })
         } else {
-            // Integer cost
             let primal_bound = if let Some(primal_bound) = primal_bound {
                 Some(primal_bound.extract::<Integer>()?)
             } else {
@@ -162,19 +165,29 @@ impl CustomDualBoundCabsPy {
                 user_evaluators,
             );
 
-            Ok(CustomDualBoundCabsPy(WrappedSolver::Int(solver)))
+            // 🟢 Return struct with named fields
+            Ok(CustomDualBoundCabsPy {
+                solver: WrappedSolver::Int(solver),
+                _guard: guard, 
+            })
         }
     }
 
     /// search()
     #[pyo3(signature = ())]
     fn search(&mut self) -> PyResult<SolutionPy> {
-        self.0.search()
+        let result = self.solver.search();
+        // 🟢 Write stats immediately after search finishes
+        self._guard.write_stats();
+        result
     }
 
     /// search_next()
     #[pyo3(signature = ())]
     fn search_next(&mut self) -> PyResult<(SolutionPy, bool)> {
-        self.0.search_next()
+        let result = self.solver.search_next();
+        // 🟢 Write stats immediately after search finishes
+        self._guard.write_stats();
+        result
     }
 }

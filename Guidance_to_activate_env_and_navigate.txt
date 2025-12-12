@@ -1,13 +1,24 @@
+#Install maturin
+pip install maturin
+
 #Activation of environment
 cd 'C:\Users\ACER\Desktop\Code\0.Thesis implementation\2_DIDP_custom_search_guidance_local\Thesis_modified_DIDP'
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
 .\venv\Scripts\Activate.ps1
 
 #Deploy modified DIDP
-pip install maturin (if not install before)
+pip uninstall modified_didppy
 cd 'C:\Users\ACER\Desktop\Code\0.Thesis implementation\2_DIDP_custom_search_guidance_local\Thesis_modified_DIDP'
+cargo clean
 cd didp-rs-no-transition-dominance\modified_didppy
+cargo clean
 maturin develop
+
+#Delete modified DIDP
+cd 'C:\Users\ACER\Desktop\Code\0.Thesis implementation\2_DIDP_custom_search_guidance_local\Thesis_modified_DIDP'
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+.\venv\Scripts\Activate.ps1
+pip uninstall modified_didppy
 
 #Changing directory
 cd ..\..

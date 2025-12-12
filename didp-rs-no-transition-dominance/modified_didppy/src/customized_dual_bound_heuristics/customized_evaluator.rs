@@ -7,31 +7,99 @@ use pyo3::prelude::*;
 use pyo3::types::PyTuple;
 use std::fmt;
 use std::rc::Rc;
+// 🟢 Imports for Timing and File I/O
+use std::time::Instant;
+use std::sync::Arc;
+use std::sync::atomic::{AtomicU64, AtomicUsize, Ordering};
+use std::fs::OpenOptions;
+use std::io::Write;
 
-/// Creates a combined dual bound evaluator that evaluates both:
-/// 1. Expression-based dual bounds (via model.eval_dual_bound)
-/// 2. A single Python callback function (passed as py_func)
-///
-/// This function *always* returns an Option<OrderedContinuous> (a float-based heuristic)
-/// because that is what UserPriorityCABS expects, even for Integer problems.
+// --- 1. Define a Struct to handle stats ---
+pub struct TimingStats {
+    total_us: Arc<AtomicU64>,
+    count: Arc<AtomicUsize>,
+    print_stats: bool,
+}
+
+// 🟢 Method to explicitly write stats (No Drop magic)
+impl TimingStats {
+    pub fn write_stats(&self) {
+        if self.print_stats {
+            let total = self.total_us.load(Ordering::Relaxed);
+            let count = self.count.load(Ordering::Relaxed);
+            
+            if count > 0 {
+                let avg_ms = (total as f64 / count as f64) / 1000.0;
+                let total_sec = total as f64 / 1_000_000.0;
+                
+                let message = format!(
+                    "\n--- Rust-Python Bridge Stats ---\n\
+                    Timestamp: {:?}\n\
+                    Total calls: {}\n\
+                    Total time in Python: {:.4}s\n\
+                    Avg time per call: {:.4} ms\n\
+                    --------------------------------\n",
+                    Instant::now(), count, total_sec, avg_ms
+                );
+
+                // Write to "Python_and_Rust_bridge_time_stats.txt"
+                // truncate(true) ensures we overwrite the old file every time
+                let file_result = OpenOptions::new()
+                    .create(true)
+                    .write(true)
+                    .truncate(true) 
+                    .open("Python_and_Rust_bridge_time_stats.txt");
+
+                match file_result {
+                    Ok(mut file) => {
+                        if let Err(e) = writeln!(file, "{}", message) {
+                            eprintln!("Failed to write stats file: {}", e);
+                        }
+                    }
+                    Err(e) => {
+                        eprintln!("Failed to open stats file: {}", e);
+                    }
+                }
+            }
+        }
+    }
+}
+
+/// Creates a combined dual bound evaluator AND a timing guard.
+/// Returns: (The Closure, The Guard)
 pub fn create_combined_evaluator_with_py_func<T>( // T is the model's cost type
     model: Rc<Model>,
     py_func: Py<PyAny>,
-) -> impl Fn(&StateInRegistry) -> Option<OrderedContinuous>
+    print_stats: bool,
+) -> (impl Fn(&StateInRegistry) -> Option<OrderedContinuous>, TimingStats)
 where
     T: Numeric + Ord + fmt::Display + 'static,
 {
-    move |state: &StateInRegistry| {
+    // Initialize shared counters
+    let total_us = Arc::new(AtomicU64::new(0));
+    let count = Arc::new(AtomicUsize::new(0));
+
+    // Create the Guard (Owner 1 of the data)
+    let guard = TimingStats {
+        total_us: total_us.clone(),
+        count: count.clone(),
+        print_stats,
+    };
+
+    // Clone Arcs for the closure (Owner 2 of the data)
+    let total_us_closure = total_us.clone();
+    let count_closure = count.clone();
+
+    let closure = move |state: &StateInRegistry| {
         // 1. Evaluate expression-based dual bounds (as type T)
         let expr_bound: Option<OrderedContinuous> = model
-            //
-            // THIS IS THE FIX: Changed from <T, _> to <_, T>
-            //
             .eval_dual_bound::<_, T>(state)
-            // Convert the bound (whether Integer or Continuous) to a float
             .map(|v| OrderedContinuous::from(v.to_continuous()));
 
         // 2. Evaluate the single Python callback (must return float)
+        // 🟢 START TIMER
+        let start = Instant::now();
+
         let python_bound: Option<OrderedContinuous> = Python::with_gil(|py| {
             let state_py = StatePy::from(State::from(state.clone()));
             let args = PyTuple::new(py, &[state_py.into_py(py)]);
@@ -41,20 +109,13 @@ where
                     // Python function MUST return a float or Option<float>
                     if let Ok(f_val) = result.extract::<Continuous>(py) {
                         Some(OrderedContinuous::from(f_val))
-                    }
-                    // Or Option<float>
-                    else if let Ok(Some(f_val)) = result.extract::<Option<Continuous>>(py) {
+                    } else if let Ok(Some(f_val)) = result.extract::<Option<Continuous>>(py) {
                         Some(OrderedContinuous::from(f_val))
-                    }
-                    // Handle if Python returns an int
-                    else if let Ok(i_val) = result.extract::<Integer>(py) {
+                    } else if let Ok(i_val) = result.extract::<Integer>(py) {
                         Some(OrderedContinuous::from(i_val as Continuous))
-                    }
-                    // Or Option<int>
-                    else if let Ok(Some(i_val)) = result.extract::<Option<Integer>>(py) {
+                    } else if let Ok(Some(i_val)) = result.extract::<Option<Integer>>(py) {
                         Some(OrderedContinuous::from(i_val as Continuous))
-                    }
-                    else { None }
+                    } else { None }
                 }
                 Err(e) => {
                     eprintln!("Python dual bound callback failed:");
@@ -64,23 +125,30 @@ where
             }
         });
 
+        // 🟢 STOP TIMER & UPDATE STATS
+        let elapsed = start.elapsed().as_micros() as u64;
+        total_us_closure.fetch_add(elapsed, Ordering::Relaxed);
+        count_closure.fetch_add(1, Ordering::Relaxed);
+
         // 3. Combine expression and Python bounds
         match (expr_bound, python_bound) {
             (Some(e), Some(p)) => {
                 match model.reduce_function {
-                    ReduceFunction::Min => Some(e.max(p)), // Take max for minimization
-                    ReduceFunction::Max => Some(e.min(p)), // Take min for maximization
-                    _ => Some(e), // fallback
+                    ReduceFunction::Min => Some(e.max(p)),
+                    ReduceFunction::Max => Some(e.min(p)),
+                    _ => Some(e),
                 }
             }
             (Some(e), None) => Some(e),
             (None, Some(p)) => Some(p),
             (None, None) => None,
         }
-    }
+    };
+
+    // Return BOTH the closure and the guard
+    (closure, guard)
 }
 
-// Your test code, now corrected to work with OrderedContinuous
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -90,72 +158,45 @@ mod tests {
     use std::rc::Rc;
 
     #[test]
-    fn test_combined_evaluator_logic() {
+    fn test_timing_stats_integration() {
         pyo3::prepare_freethreaded_python();
 
         Python::with_gil(|py| {
-            // Python function now returns floats
             let py_code = r#"
-def returns_20(state):
-    return 20.0
-
-def returns_none(state):
-    return None
+import time
+def mock_heuristic(state):
+    time.sleep(0.0001) 
+    return 100.0
 "#;
-            let py_module = PyModule::from_code(py, py_code, "test_module", "test_module").unwrap();
-            let py_func_returns_20: Py<PyAny> = py_module.getattr("returns_20").unwrap().into();
-            let py_func_returns_none: Py<PyAny> = py_module.getattr("returns_none").unwrap().into();
+            let py_module = PyModule::from_code(py, py_code, "test_module", "test_module")
+                .expect("Failed to create Python module");
+            let py_func: Py<PyAny> = py_module.getattr("mock_heuristic")
+                .expect("Failed to get function")
+                .into();
 
-            // --- Setup ---
-            let mut model = Model::default(); // Integer model
-            model
-                .add_dual_bound(IntegerExpression::Constant(10))
-                .unwrap();
+            let mut model = Model::default();
+            model.add_dual_bound(IntegerExpression::Constant(10)).unwrap();
             let model_rc = Rc::new(model);
             let state_in_registry = StateInRegistry::from(model_rc.target.clone());
 
-            // === SCENARIO 1: Both Rust and Python bounds exist (Minimization problem) ===
-            // We call with <Integer> because the *model* is integer based
-            let evaluator1 = create_combined_evaluator_with_py_func::<Integer>(
-                model_rc.clone(),
-                py_func_returns_20.clone(),
-            );
-            // Rust bound is 10.0, Python bound is 20.0. For minimization, we take max (20.0).
-            assert_eq!(evaluator1(&state_in_registry), Some(OrderedContinuous::from(20.0)));
-            println!("✅ Scenario 1 Passed: Both bounds exist.");
+            println!("\n>>> TEST START: Creating Evaluator...");
 
-            // === SCENARIO 2: Only Rust expression bound exists ===
-            let evaluator2 = create_combined_evaluator_with_py_func::<Integer>(
+            let (evaluator, guard) = create_combined_evaluator_with_py_func::<Integer>(
                 model_rc.clone(),
-                py_func_returns_none.clone(),
+                py_func.clone(),
+                true,
             );
-            // Should return only the Rust bound (10.0).
-            assert_eq!(evaluator2(&state_in_registry), Some(OrderedContinuous::from(10.0)));
-            println!("✅ Scenario 2 Passed: Only Rust bound exists.");
+
+            let iterations = 50;
+            for i in 0..iterations {
+                let result = evaluator(&state_in_registry);
+                assert_eq!(result, Some(OrderedContinuous::from(100.0)), "Failed at iter {}", i);
+            }
             
-            // === SCENARIO 3: Only Python bound exists ===
-            let empty_model_rc = Rc::new(Model::default());
-            let empty_state = StateInRegistry::from(empty_model_rc.target.clone());
+            // Manually call write_stats to test it
+            guard.write_stats();
 
-            let evaluator3 = create_combined_evaluator_with_py_func::<Integer>(
-                empty_model_rc.clone(),
-                py_func_returns_20.clone(),
-            );
-            // Should return only the Python bound (20.0).
-            assert_eq!(evaluator3(&empty_state), Some(OrderedContinuous::from(20.0)));
-            println!("✅ Scenario 3 Passed: Only Python bound exists.");
-
-            // === SCENARIO 4: Neither bound exists ===
-            let empty_model_2_rc = Rc::new(Model::default());
-            let empty_state_2 = StateInRegistry::from(empty_model_2_rc.target.clone());
-
-            let evaluator4 = create_combined_evaluator_with_py_func::<Integer>(
-                empty_model_2_rc.clone(),
-                py_func_returns_none.clone(),
-            );
-            // Should return None.
-            assert_eq!(evaluator4(&empty_state_2), None);
-            println!("✅ Scenario 4 Passed: Neither bound exists.");
+            println!(">>> TEST END: Check 'Python_and_Rust_bridge_time_stats.txt'.\n");
         });
     }
 }

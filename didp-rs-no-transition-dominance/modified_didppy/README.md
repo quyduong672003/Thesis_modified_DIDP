@@ -73,3 +73,5 @@ pip install --force-reinstall ../target/wheels/didppy-{x}.whl
 ```
 
 `{x}` depends on your environment.
+
+## Testing code of customized_evaluators in terminal: cargo test test_timing_stats_integration -- --nocapture
