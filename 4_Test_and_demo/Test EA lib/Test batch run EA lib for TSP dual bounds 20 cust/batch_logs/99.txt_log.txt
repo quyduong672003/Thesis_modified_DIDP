@@ -1,0 +1,25 @@
+--- Initialization: Generating Population of size 2 - 5 generations ---
+Generating Initial Population at time: Sat Dec 13 11:19:22 2025
+Initial Population Generated at time: Sat Dec 13 11:19:32 2025
+Initilization time 10.029812574386597
+Initial Best Fitness: 0.0
+Subtree crossover produced invalid offspring: Invalid Chromosome: No heuristics found (Pure Constant).
+Using fallback parent chromosome for this subtree crossover.
+Gen 1: Best Fitness = 0.0 | Global Best = 0.0
+Gen 2: Best Fitness = 0.0 | Global Best = 0.0
+Gen 3: Best Fitness = 0.0 | Global Best = 0.0
+Gen 4: Best Fitness = 0.0 | Global Best = 0.0
+Gen 5: Best Fitness = 0.0 | Global Best = 0.0
+
+========================================
+       PERFORMANCE PROFILING REPORT       
+========================================
+Total Runtime:    70.2625 seconds
+========================================
+--- Evolution Completed ---
+
+
+========================================
+FINAL BEST INDIVIDUAL
+========================================
+{'chromosome': [6.33, 'h_mst', 'MULTIPLY'], 'fitness': 0.0}

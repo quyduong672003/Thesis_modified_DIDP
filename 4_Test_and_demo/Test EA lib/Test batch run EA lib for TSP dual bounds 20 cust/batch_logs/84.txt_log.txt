@@ -1,0 +1,23 @@
+--- Initialization: Generating Population of size 2 - 5 generations ---
+Generating Initial Population at time: Sat Dec 13 11:28:01 2025
+Initial Population Generated at time: Sat Dec 13 11:28:11 2025
+Initilization time 10.070429801940918
+Initial Best Fitness: 0.24598930481283424
+Gen 1: Best Fitness = 0.20855614973262032 | Global Best = 0.20855614973262032
+Gen 2: Best Fitness = 0.20855614973262032 | Global Best = 0.20855614973262032
+Gen 3: Best Fitness = 0.20855614973262032 | Global Best = 0.20855614973262032
+Gen 4: Best Fitness = 0.20855614973262032 | Global Best = 0.20855614973262032
+Gen 5: Best Fitness = 0.20855614973262032 | Global Best = 0.20855614973262032
+
+========================================
+       PERFORMANCE PROFILING REPORT       
+========================================
+Total Runtime:    45.2976 seconds
+========================================
+--- Evolution Completed ---
+
+
+========================================
+FINAL BEST INDIVIDUAL
+========================================
+{'chromosome': [5.9, 'h_assignment', 'MULTIPLY', 4.94, 'h_mst', 'MULTIPLY', 'SUBTRACT', 5.1, 'h_assignment', 'MULTIPLY', 'h_assignment', 'PDIV', 'ADD', 'h_assignment', 5.45, 'h_mst', 'MULTIPLY', 'MIN', 7.47, 'h_assignment', 'MULTIPLY', 'h_assignment', 'ADD', 4.03, 'h_mst', 'MULTIPLY', 8.12, 'h_assignment', 'MULTIPLY', 'PDIV', 'MIN', 'ADD', 'MAX', 3.71, 'h_mst', 'MULTIPLY', 'h_assignment', 'SUBTRACT', 'h_mst', 'h_mst', 'MIN', 'MIN', 8.61, 'h_mst', 'MULTIPLY', 'h_mst', 'MULTIPLY', 3.78, 'h_mst', 'MULTIPLY', 'h_mst', 'MULTIPLY', 'MIN', 'MAX', 'PDIV'], 'fitness': 0.20855614973262032}

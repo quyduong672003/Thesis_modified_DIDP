@@ -1,0 +1,23 @@
+--- Initialization: Generating Population of size 2 - 5 generations ---
+Generating Initial Population at time: Sat Dec 13 11:24:24 2025
+Initial Population Generated at time: Sat Dec 13 11:24:34 2025
+Initilization time 10.03321886062622
+Initial Best Fitness: 0.11590296495956873
+Gen 1: Best Fitness = 0.11590296495956873 | Global Best = 0.11590296495956873
+Gen 2: Best Fitness = 0.0 | Global Best = 0.0
+Gen 3: Best Fitness = 0.0 | Global Best = 0.0
+Gen 4: Best Fitness = 0.0 | Global Best = 0.0
+Gen 5: Best Fitness = 0.0 | Global Best = 0.0
+
+========================================
+       PERFORMANCE PROFILING REPORT       
+========================================
+Total Runtime:    45.1829 seconds
+========================================
+--- Evolution Completed ---
+
+
+========================================
+FINAL BEST INDIVIDUAL
+========================================
+{'chromosome': [4.06, 'h_mst', 'MULTIPLY', 'h_mst', 'MIN'], 'fitness': 0.0}
