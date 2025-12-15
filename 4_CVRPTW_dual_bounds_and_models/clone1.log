@@ -1,0 +1,27 @@
+
+Log for 'C:\Users\ACER\AppData\Local\Temp\2f74c748ee264c89a3997ac3cc86594d-pulp.lp' Clone_1 (V12.9.0.0) Mon Dec 15 01:33:40 2025
+
+Tried aggregator 0 times.
+Presolve time = 0.44 sec. (131.76 ticks)
+Symmetry aggregator did 413040 additional substitutions.
+Tried aggregator 0 times.
+Presolve time = 0.00 sec. (5.26 ticks)
+Parallel mode: none, using 1 thread for barrier
+
+***NOTE: Found 70 dense columns.
+
+Number of nonzeros in lower triangle of A*A' = 306199
+Using Nested Dissection ordering
+Total time for automatic ordering = 0.33 sec. (465.07 ticks)
+Summary statistics for Cholesky factor:
+  Rows in Factor            = 7179
+  Integer space required    = 57405
+  Total non-zeros in factor = 1069350
+  Total FP ops to factor    = 360135638
+ Itn      Primal Obj        Dual Obj  Prim Inf Upper Inf  Dual Inf Inf Ratio
+   0   5.3499856e+08  -1.0269570e+07  2.57e+06  1.07e+06  3.09e+04  1.00e+00
+Barrier time = 0.48 sec. (634.12 ticks)
+Barrier time = 0.56 sec. (648.75 ticks)
+
+Dual simplex solved model.
+

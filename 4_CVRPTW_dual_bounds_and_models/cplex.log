@@ -1,0 +1,44 @@
+
+Log started (V12.9.0.0) Mon Dec 15 01:33:39 2025
+
+
+Problem 'C:\Users\ACER\AppData\Local\Temp\2f74c748ee264c89a3997ac3cc86594d-pulp.lp' read.
+Read time = 0.86 sec. (41.24 ticks)
+New value for time limit in seconds: 60
+New value for default parallel thread count: 2
+CPXPARAM_Threads                                 2
+CPXPARAM_TimeLimit                               60
+Parallel mode: deterministic, using up to 2 threads for concurrent optimization.
+Tried aggregator 1 time.
+LP Presolve eliminated 4525 rows and 50 columns.
+Reduced LP has 175325 rows, 255025 columns, and 2012500 nonzeros.
+Presolve time = 1.59 sec. (498.56 ticks)
+Symmetry aggregator did 413040 additional substitutions.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =             0.000000
+Iteration:   128   Dual objective     =          1210.563885
+
+Dual crossover.
+  Dual:  Fixing 550 variables.
+      549 DMoves:  Infeasibility  0.00000000e+00  Objective  1.21161599e+03
+      133 DMoves:  Infeasibility  0.00000000e+00  Objective  1.60909259e+03
+        0 DMoves:  Infeasibility  0.00000000e+00  Objective  1.68273066e+03
+  Dual:  Pushed 0, exchanged 550.
+  Primal:  Fixed no variables.
+Iteration:   129   Dual objective     =          1682.730660
+
+Iteration log . . .
+Iteration:     1   Dual objective     =          1011.573211
+
+Dual simplex solved model.
+
+
+Dual simplex - Infeasible:  Objective =  1.6503757739e+03
+Solution time =    3.20 sec.  Iterations = 703 (0)
+Infeasible variable = slack Eq_7_2_Assign_82
+Deterministic time = 1395.85 ticks  (435.79 ticks/sec)
+
+
+Solution written to file 'C:\Users\ACER\AppData\Local\Temp\2f74c748ee264c89a3997ac3cc86594d-pulp.sol'.
