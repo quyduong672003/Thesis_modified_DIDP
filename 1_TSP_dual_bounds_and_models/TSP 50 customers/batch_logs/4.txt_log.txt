@@ -1,3 +1,0 @@
---- Initialization: Generating Population of size 15 - 10 generations - solver limit at 10 seconds ---
-Generating Initial Population at time: Fri Dec 19 23:29:15 2025
--> Seeding: 1 Random Terminal + 1 Simple Subtree

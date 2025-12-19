@@ -37,7 +37,8 @@ PowerShell:
     pip install pulp
     pip install notebook
     pip install ipykernel
-
+    pip install vrplib
+    pip install ortools
 --------------------------------------------
  ENVIRONMENT IS NOW CLEAN AND FULLY WORKING.
 --------------------------------------------

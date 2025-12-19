@@ -16,9 +16,10 @@ GUIDE: Setting up Python 3.7 + CPLEX 12.9 for Research
    - Open your project folder in VS Code.
    - Open Terminal.
    - Run:
-     > py -3.7 -m venv old_venv
+     > py -3.7 -m venv v3.7_python_venv
    - Activate it:
-     > .\old_venv\Scripts\activate
+   Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
+   .\v3.7_python_venv\Scripts\activate
      (Ensure you see "(old_venv)" at the start of the command line)
 
 3. INSTALL THE CPLEX BRIDGE (Connecting Python to CPLEX 12.9)

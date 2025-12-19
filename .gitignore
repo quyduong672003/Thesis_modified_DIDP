@@ -2,4 +2,4 @@
 target/
 **/*.pdb
 main_venv/
-v7_python_venv
+v3.7_python_venv
