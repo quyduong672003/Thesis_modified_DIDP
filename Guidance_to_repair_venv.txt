@@ -3,7 +3,7 @@
  WITH REQUIRED DEPENDENCIES
 ===========================================
 
-cd 'C:\Users\ACER\Desktop\Code\0.Thesis implementation\2_DIDP_custom_search_guidance_local\Thesis_modified_DIDP'
+cd 'C:\Users\ACER\Desktop\Code\0_Thesis_implementation\2_DIDP_custom_search_guidance_local\Thesis_modified_DIDP'
 1. Delete the OLD venv (it contains wrong paths):
 ------------------------------------------------
 PowerShell:
@@ -18,7 +18,7 @@ PowerShell:
 3. Activate the environment:
 ----------------------------
     Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
-    .\venv\Scripts\Activate.ps1
+    .\main_venv\Scripts\Activate.ps1
 
 
 4. Upgrade pip (always recommended):
@@ -35,7 +35,8 @@ PowerShell:
     pip install pandas==2.3.3
     pip install scipy==1.16.3
     pip install pulp
-
+    pip install notebook
+    pip install ipykernel
 
 --------------------------------------------
  ENVIRONMENT IS NOW CLEAN AND FULLY WORKING.

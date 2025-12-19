@@ -1,4 +1,5 @@
 # Ignore all Rust build artifacts
 target/
 **/*.pdb
-venv/
+main_venv/
+v7_python_venv

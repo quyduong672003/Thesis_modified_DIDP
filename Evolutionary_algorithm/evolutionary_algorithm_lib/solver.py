@@ -113,12 +113,20 @@ def combining_modified_didppy_solver_with_chromosome(chromosome,
                     expanded=number_expanded, 
                     timing_info=timing_info)
             elif output_other_result and (not print_timing_stats) :
-                return (solution.cost, solution.is_optimal, solution.generated, solution.expanded)
+                return {"cost": solution.cost, 
+                        "optimality": solution.is_optimal,
+                        "infeasibility": solution.is_infeasible,
+                        "generated": solution.generated, 
+                        "expanded": solution.expanded}
             else:
                 return solution.cost
         else:
             if output_other_result:
-                return float('inf'), False, 0, 0, timing_info
+                return {"cost": float('inf'), 
+                        "optimality": solution.is_optimal,
+                        "infeasibility": solution.is_infeasible,
+                        "generated": solution.generated, 
+                        "expanded": solution.expanded}
             else:
                 return float('inf')
 

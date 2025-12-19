@@ -136,6 +136,113 @@ def initialize_list_of_chromosome_fitness_dictionary(list_size,
                                                     reference_point,
                                                     solver_time_limit):
     population = []
+    seed_signatures = set()
+    
+    # ---------------------------------------------------------
+    # 1. SEEDING PHASE (Target: 2 Candidates)
+    # ---------------------------------------------------------
+    print("-> Seeding: 1 Random Terminal + 1 Simple Subtree")
+    
+    # --- SEED 1: The Simple Terminal (e.g., ['min_out']) ---
+    if len(population) < list_size:
+        # Create a single terminal block
+        seed_1_chrom = generate_random_terminal_block(
+            dual_bound_functions_dict=dual_bound_functions_dict,
+            LB_range_of_constant=LB_range_of_constant,
+            UB_range_of_constant=UB_range_of_constant
+        )
+        
+        # Add to population
+        seed_signatures.add(tuple(seed_1_chrom))
+        population.append(chromosome_fitness_dict_evaluation(
+            chromosome_fitness_dict={'chromosome': seed_1_chrom, 'fitness': 0}, 
+            didp_model_registry=didp_model_registry, 
+            dual_bound_expression_function=dual_bound_expression_function, 
+            reference_point=reference_point,
+            solver_time_limit=solver_time_limit
+        ))
+
+    # --- SEED 2: The Simple Subtree (e.g., ['min_out', 'cost', '+']) ---
+    if len(population) < list_size:
+        max_attempts = 20
+        attempt = 0
+        
+        while attempt < max_attempts:
+            attempt += 1
+            
+            # Step A: Generate Left Operand (Terminal)
+            left_block = generate_random_terminal_block(
+                dual_bound_functions_dict=dual_bound_functions_dict,
+                LB_range_of_constant=LB_range_of_constant,
+                UB_range_of_constant=UB_range_of_constant
+            )
+            
+            # Step B: Generate Right Operand (Terminal)
+            right_block = generate_random_terminal_block(
+                dual_bound_functions_dict=dual_bound_functions_dict,
+                LB_range_of_constant=LB_range_of_constant,
+                UB_range_of_constant=UB_range_of_constant
+            )
+            
+            # Step C: Pick Random Operator
+            op = random.choice(available_operations)
+            
+            # Combine into RPN: [Left parts..., Right parts..., Operator]
+            seed_2_chrom = left_block + right_block + [op]
+            
+            # Step D: Duplicate Check (Ensure it's not identical to Seed 1)
+            if tuple(seed_2_chrom) not in seed_signatures:
+                # Found a unique simple subtree!
+                seed_signatures.add(tuple(seed_2_chrom))
+                population.append(chromosome_fitness_dict_evaluation(
+                    chromosome_fitness_dict={'chromosome': seed_2_chrom, 'fitness': 0}, 
+                    didp_model_registry=didp_model_registry, 
+                    dual_bound_expression_function=dual_bound_expression_function, 
+                    reference_point=reference_point,
+                    solver_time_limit=solver_time_limit
+                ))
+                break # Exit loop once added
+
+    # ---------------------------------------------------------
+    # 2. RANDOM PHASE: Fill remaining slots (Standard Logic)
+    # ---------------------------------------------------------
+    remaining_slots = list_size - len(population)
+    
+    if remaining_slots > 0:
+        for _ in range(remaining_slots):
+            newly_generated_chromosome_fitness_dict = generate_combined_chromosome(
+                dual_bound_functions_dict=dual_bound_functions_dict, 
+                LB_range_of_constant=LB_range_of_constant, 
+                UB_range_of_constant=UB_range_of_constant,
+                min_chromosome_length=min_chromosome_length, 
+                max_chromosome_length=max_chromosome_length, 
+                available_operations=available_operations
+            )
+            
+            # Evaluate and add
+            evaluated_newly_generated_chromosome_fitness_dict = chromosome_fitness_dict_evaluation(
+                chromosome_fitness_dict=newly_generated_chromosome_fitness_dict, 
+                didp_model_registry=didp_model_registry, 
+                dual_bound_expression_function=dual_bound_expression_function, 
+                reference_point=reference_point,
+                solver_time_limit=solver_time_limit
+            )
+            population.append(evaluated_newly_generated_chromosome_fitness_dict)
+            
+    return population
+
+def old_initialize_list_of_chromosome_fitness_dictionary(list_size, 
+                                                    dual_bound_functions_dict, 
+                                                    didp_model_registry, 
+                                                    dual_bound_expression_function,
+                                                    LB_range_of_constant, 
+                                                    UB_range_of_constant,
+                                                    min_chromosome_length,
+                                                    max_chromosome_length,
+                                                    available_operations,
+                                                    reference_point,
+                                                    solver_time_limit):
+    population = []
     
     # ---------------------------------------------------------
     # 1. SEEDING PHASE: Unique Valid Terminal Nodes Only

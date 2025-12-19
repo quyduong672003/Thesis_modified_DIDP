@@ -1,18 +1,15 @@
---- Initialization: Generating Population of size 2 - 5 generations ---
-Generating Initial Population at time: Sat Dec 13 12:58:08 2025
-Initial Population Generated at time: Sat Dec 13 12:58:18 2025
-Initilization time 10.109848976135254
-Initial Best Fitness: 0.13
-Gen 1: Best Fitness = 0.13 | Global Best = 0.13
-Gen 2: Best Fitness = 0.0025 | Global Best = 0.0025
-Gen 3: Best Fitness = 0.0025 | Global Best = 0.0025
-Gen 4: Best Fitness = 0.0025 | Global Best = 0.0025
-Gen 5: Best Fitness = 0.0025 | Global Best = 0.0025
+--- Initialization: Generating Population of size 2 - 1 generations ---
+Generating Initial Population at time: Wed Dec 17 23:25:08 2025
+-> Seeding: 1 Random Terminal + 1 Simple Subtree
+Initial Population Generated at time: Wed Dec 17 23:25:28 2025
+Initilization time 20.1731276512146
+Initial Best Fitness: 0.0
+Gen 1: Best Fitness = 0.0 | Global Best = 0.0
 
 ========================================
-       PERFORMANCE PROFILING REPORT       
+      PERFORMANCE PROFILING REPORT      
 ========================================
-Total Runtime:    55.5374 seconds
+Total Runtime:    30.2884 seconds
 ========================================
 --- Evolution Completed ---
 
@@ -20,4 +17,4 @@ Total Runtime:    55.5374 seconds
 ========================================
 FINAL BEST INDIVIDUAL
 ========================================
-{'chromosome': [6.26, 'h_1tree', 'MULTIPLY', 'h_global_min_flow', 'MULTIPLY', 'h_1tree', 'MIN', 6.26, 'h_1tree', 'MULTIPLY', 'h_global_min_flow', 'MULTIPLY', 'h_1tree', 'MIN', 9.31, 'h_mst', 'MULTIPLY', 5.79, 'h_mst', 'MULTIPLY', 'PDIV', 'h_eigen', 'SUBTRACT', 'ADD', 'ADD'], 'fitness': 0.0025}
+{'chromosome': [0.4, 'h_1tree', 'MULTIPLY'], 'fitness': 0.0}

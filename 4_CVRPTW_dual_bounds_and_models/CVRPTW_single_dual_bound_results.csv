@@ -1,0 +1,2 @@
+Instance,Cost,Nodes Expanded,Nodes Generated,Running Time (s),Is Optimal,Infeasibility
+RC101.txt,2450.3687222113554,311083,1659312,300.020711183548,False (Time Limit),False

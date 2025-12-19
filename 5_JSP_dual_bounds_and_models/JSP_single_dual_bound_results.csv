@@ -1,0 +1,2 @@
+Instance,Cost,Nodes Expanded,Nodes Generated,Running Time (s),Is Optimal
+ft06.txt,55.0,56172,76378,10.040108919143677,False (Time Limit)

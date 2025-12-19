@@ -1,0 +1,85 @@
+======================================================================
+GUIDE: Setting up Python 3.7 + CPLEX 12.9 for Research
+======================================================================
+
+1. INSTALL PYTHON 3.7.9 (Base Interpreter)
+----------------------------------------------------------------------
+   - Download: https://www.python.org/ftp/python/3.7.9/python-3.7.9-amd64.exe
+   - Run the installer.
+   - CRITICAL: Check the box "Add Python 3.7 to PATH" (or note installation path).
+   - Verify installation in a new terminal:
+     > py -3.7 --version
+     (Should see "Python 3.7.9")
+
+2. CREATE THE VIRTUAL ENVIRONMENT (old_venv)
+----------------------------------------------------------------------
+   - Open your project folder in VS Code.
+   - Open Terminal.
+   - Run:
+     > py -3.7 -m venv old_venv
+   - Activate it:
+     > .\old_venv\Scripts\activate
+     (Ensure you see "(old_venv)" at the start of the command line)
+
+3. INSTALL THE CPLEX BRIDGE (Connecting Python to CPLEX 12.9)
+----------------------------------------------------------------------
+   Note: CPLEX 12.9 is protected in "Program Files", so we copy it to a 
+   temp folder to install it safely.
+
+   Run these commands inside the VS Code Terminal (with old_venv active):
+
+   A. Copy installer files to project folder:
+      > Copy-Item "C:\Program Files\IBM\ILOG\CPLEX_Studio129\cplex\python\3.7\x64_win64" -Destination ".\temp_cplex_install" -Recurse
+
+   B. Enter the temp folder:
+      > cd .\temp_cplex_install
+
+   C. Run the setup script:
+      > python setup.py install
+      (Wait for "Finished processing dependencies")
+
+   D. Cleanup (Delete temp files):
+      > cd ..
+      > Remove-Item .\temp_cplex_install -Recurse -Force
+
+4. INSTALL HELPER LIBRARIES (Compatible Versions)
+----------------------------------------------------------------------
+   Newer libraries don't work with Python 3.7, so we use specific older versions.
+   
+   Run in Terminal:
+   > python -m pip install --upgrade pip
+   > pip install numpy==1.21.6
+   > pip install docplex==2.25.236
+
+5. VERIFICATION CODE (test_cplex.py)
+----------------------------------------------------------------------
+   Create a file 'test_cplex.py' with this content and run it:
+
+   import cplex
+   from docplex.mp.model import Model
+   
+   print("--- SYSTEM CHECK ---")
+   try:
+       c = cplex.Cplex()
+       print(f"✅ CPLEX Engine Detected: {c.get_version()}")
+   except Exception as e:
+       print(f"❌ CPLEX Engine Failed: {e}")
+
+   print("\n--- OPTIMIZATION CHECK ---")
+   try:
+       mdl = Model(name='test')
+       x = mdl.continuous_var(name='x')
+       y = mdl.continuous_var(name='y')
+       mdl.add_constraint(x + y <= 10)
+       mdl.maximize(x + y)
+       sol = mdl.solve()
+       if sol:
+           print(f"✅ Solver Output: {sol.objective_value} (Expected: 10)")
+       else:
+           print("⚠️ No solution found")
+   except Exception as e:
+       print(f"❌ Docplex Failed: {e}")
+
+======================================================================
+END OF GUIDE
+======================================================================

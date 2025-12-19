@@ -1,0 +1,16 @@
+Instance,Total_Time_(s),Best_Fitness,Best_Chromosome,Log_File
+61.txt,1534.78,0.1883249528598368,['h_mst'],batch_logs\61.txt_log.txt
+53.txt,1675.16,0.3119326777609681,"['h_mst', 'h_mst', 'MIN']",batch_logs\53.txt_log.txt
+50.txt,1573.84,0.212592468056489,"['h_1tree', 6.91, 'h_global_min_flow', 'MULTIPLY', 'MIN']",batch_logs\50.txt_log.txt
+89.txt,1634.66,0.3050417801145426,"[1.18, 'h_eigen', 'MULTIPLY']",batch_logs\89.txt_log.txt
+31.txt,1667.24,0.3565312624452406,['h_mst'],batch_logs\31.txt_log.txt
+75.txt,1697.45,0.2833076671799899,"[1.35, 1.35, 'h_mst', 'MULTIPLY', 'MULTIPLY']",batch_logs\75.txt_log.txt
+52.txt,1540.6,0.270279173186198,"[1.8, 'h_eigen', 'MAX']",batch_logs\52.txt_log.txt
+33.txt,1594.78,0.262695580565468,['h_degree_average'],batch_logs\33.txt_log.txt
+39.txt,1673.37,0.2569765777798979,"[1.68, 'h_mst', 'MULTIPLY']",batch_logs\39.txt_log.txt
+11.txt,1491.29,0.1402374515105207,"[1.15, 'h_1tree', 'MULTIPLY']",batch_logs\11.txt_log.txt
+14.txt,1580.8,0.1401943287725562,['h_mst'],batch_logs\14.txt_log.txt
+54.txt,1481.56,0.3678110112469917,"[0.25, 'h_assignment', 'MULTIPLY', 'h_assignment', 'MIN']",batch_logs\54.txt_log.txt
+78.txt,1652.79,0.3302109989860458,['h_1tree'],batch_logs\78.txt_log.txt
+59.txt,1617.59,0.2354483964477988,['h_eigen'],batch_logs\59.txt_log.txt
+46.txt,1547.87,0.2582723789620341,['h_mst'],batch_logs\46.txt_log.txt

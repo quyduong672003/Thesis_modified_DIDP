@@ -1,0 +1,29 @@
+--- Initialization: Generating Population of size 25 - 10 generations ---
+Generating Initial Population at time: Mon Dec 15 19:58:42 2025
+-> Attempting to seed 2 unique terminal candidates...
+Initial Population Generated at time: Mon Dec 15 20:01:05 2025
+Initilization time 143.36414623260498
+Initial Best Fitness: 0.0
+Gen 1: Best Fitness = 0.0 | Global Best = 0.0
+Gen 2: Best Fitness = 0.0 | Global Best = 0.0
+Gen 3: Best Fitness = 0.0 | Global Best = 0.0
+Gen 4: Best Fitness = 0.0 | Global Best = 0.0
+Gen 5: Best Fitness = 0.0 | Global Best = 0.0
+Gen 6: Best Fitness = 0.0 | Global Best = 0.0
+Gen 7: Best Fitness = 0.0 | Global Best = 0.0
+Gen 8: Best Fitness = 0.0 | Global Best = 0.0
+Gen 9: Best Fitness = 0.0 | Global Best = 0.0
+Gen 10: Best Fitness = 0.0 | Global Best = 0.0
+
+========================================
+       PERFORMANCE PROFILING REPORT       
+========================================
+Total Runtime:    1245.9877 seconds
+========================================
+--- Evolution Completed ---
+
+
+========================================
+FINAL BEST INDIVIDUAL
+========================================
+{'chromosome': ['h_eigen'], 'fitness': 0.0}

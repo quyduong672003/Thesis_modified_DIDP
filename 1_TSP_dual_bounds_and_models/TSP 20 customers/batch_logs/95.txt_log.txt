@@ -1,19 +1,15 @@
---- Initialization: Generating Population of size 2 - 5 generations ---
-Generating Initial Population at time: Sat Dec 13 14:07:39 2025
--> Attempting to seed 2 unique terminal candidates...
-Initial Population Generated at time: Sat Dec 13 14:07:49 2025
-Initilization time 10.287527799606323
-Initial Best Fitness: 0.0
+--- Initialization: Generating Population of size 2 - 1 generations ---
+Generating Initial Population at time: Wed Dec 17 23:24:37 2025
+-> Seeding: 1 Random Terminal + 1 Simple Subtree
+Initial Population Generated at time: Wed Dec 17 23:24:58 2025
+Initilization time 20.346938371658325
+Initial Best Fitness: 0.0431266846361186
 Gen 1: Best Fitness = 0.0 | Global Best = 0.0
-Gen 2: Best Fitness = 0.0 | Global Best = 0.0
-Gen 3: Best Fitness = 0.0 | Global Best = 0.0
-Gen 4: Best Fitness = 0.0 | Global Best = 0.0
-Gen 5: Best Fitness = 0.0 | Global Best = 0.0
 
 ========================================
-       PERFORMANCE PROFILING REPORT       
+      PERFORMANCE PROFILING REPORT      
 ========================================
-Total Runtime:    50.7976 seconds
+Total Runtime:    30.5197 seconds
 ========================================
 --- Evolution Completed ---
 
@@ -21,4 +17,4 @@ Total Runtime:    50.7976 seconds
 ========================================
 FINAL BEST INDIVIDUAL
 ========================================
-{'chromosome': ['h_eigen'], 'fitness': 0.0}
+{'chromosome': [0.81, 'h_assignment', 'MULTIPLY'], 'fitness': 0.0}

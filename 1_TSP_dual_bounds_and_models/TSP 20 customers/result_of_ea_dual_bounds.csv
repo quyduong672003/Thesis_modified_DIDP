@@ -1,21 +1,21 @@
 Instance,Total_Time_(s),Best_Fitness,Best_Chromosome,Log_File
-98.txt,65.48,0.1067415730337078,"[5.59, 'h_eigen', 'MULTIPLY', 0.25, 'h_global_min_flow', 'MULTIPLY', 'h_lp_relaxation', 8.07, 'h_1tree', 'MULTIPLY', 'SUBTRACT', 'ADD', 'PDIV', 'h_degree_average', 8.88, 'h_mst', 'MULTIPLY', 'h_assignment', 'MIN', 'PDIV', 'MAX']",batch_logs\98.txt_log.txt
-91.txt,50.65,0.3424657534246575,"[7.78, 'h_lp_relaxation', 'MULTIPLY', 'h_assignment', 2.48, 'h_global_min_flow', 'MULTIPLY', 'h_1tree', 'SUBTRACT', 'MIN', 'h_mst', 'h_degree_average', 'h_eigen', 'MIN', 'ADD', 'SUBTRACT', 'MAX']",batch_logs\91.txt_log.txt
-18.txt,45.97,0.203125,"[4.95, 'h_degree_average', 'MULTIPLY', 'h_global_min_flow', 'MAX']",batch_logs\18.txt_log.txt
-12.txt,50.71,0.0651629072681704,"[0.74, 'h_degree_average', 'MULTIPLY', 'h_lp_relaxation', 1.07, 'SUBTRACT', 'MIN']",batch_logs\12.txt_log.txt
-49.txt,66.11,0.0,"['h_1tree', 9.56, 'h_lp_relaxation', 'MULTIPLY', 'h_mst', 'h_global_min_flow', 'h_eigen', 1.65, 'h_mst', 'MULTIPLY', 0.61, 'h_degree_average', 'MULTIPLY', 'SUBTRACT', 'PDIV', 'ADD', 'MAX', 'SUBTRACT', 'ADD']",batch_logs\49.txt_log.txt
-99.txt,55.8,0.0869565217391304,"['h_lp_relaxation', 'h_1tree', 'PDIV']",batch_logs\99.txt_log.txt
-85.txt,61.02,0.1994609164420485,"[8.8, 'h_eigen', 'MULTIPLY', 'h_global_min_flow', 8.12, 'h_lp_relaxation', 'MULTIPLY', 'h_mst', 'MULTIPLY', 'SUBTRACT', 'MAX', 8.8, 'h_eigen', 'MULTIPLY', 'h_global_min_flow', 8.12, 'h_lp_relaxation', 'MULTIPLY', 'h_mst', 'MULTIPLY', 'SUBTRACT', 'MAX', 'SUBTRACT']",batch_logs\85.txt_log.txt
-26.txt,83.06,0.2210796915167095,"[7.05, 'h_mst', 'MULTIPLY', 'h_lp_relaxation', 1.59, 'h_assignment', 'MULTIPLY', 'h_global_min_flow', 3.96, 'h_1tree', 'MULTIPLY', 8.64, 'h_eigen', 'MULTIPLY', 'ADD', 'MULTIPLY', 'MIN', 'SUBTRACT', 'MAX']",batch_logs\26.txt_log.txt
-1.txt,50.98,0.7435897435897436,"[7.85, 'h_global_min_flow', 'MULTIPLY', 8.75, 'h_degree_average', 'MULTIPLY', 0.3, 'h_assignment', 'MULTIPLY', 'ADD', 'SUBTRACT', 3.83, 'h_lp_relaxation', 'MULTIPLY', 'h_1tree', 9.46, 'h_mst', 'MULTIPLY', 'h_eigen', 'MULTIPLY', 'SUBTRACT', 'MULTIPLY', 'MULTIPLY']",batch_logs\1.txt_log.txt
-53.txt,60.9,0.0564705882352941,"['h_1tree', 'h_degree_average', 'MAX', 0.33, 'h_lp_relaxation', 'MULTIPLY', 'h_global_min_flow', 'MIN', 'MIN', 'h_degree_average', 'h_degree_average', 'MULTIPLY', 'h_assignment', 3.75, 'h_1tree', 'MULTIPLY', 'ADD', 'MAX', 'PDIV']",batch_logs\53.txt_log.txt
-86.txt,66.36,0.5013477088948787,"['h_global_min_flow', 'h_lp_relaxation', 7.18, 'h_mst', 'MULTIPLY', 'ADD', 'PDIV', 9.73, 'h_degree_average', 'MULTIPLY', 'h_eigen', 'MAX', 'h_1tree', 'h_assignment', 'PDIV', 'SUBTRACT', 'MAX']",batch_logs\86.txt_log.txt
-19.txt,55.54,0.0025,"[6.26, 'h_1tree', 'MULTIPLY', 'h_global_min_flow', 'MULTIPLY', 'h_1tree', 'MIN', 6.26, 'h_1tree', 'MULTIPLY', 'h_global_min_flow', 'MULTIPLY', 'h_1tree', 'MIN', 9.31, 'h_mst', 'MULTIPLY', 5.79, 'h_mst', 'MULTIPLY', 'PDIV', 'h_eigen', 'SUBTRACT', 'ADD', 'ADD']",batch_logs\19.txt_log.txt
-21.txt,31.71,0.0027247956403269,"[0.91, 'h_assignment', 'MULTIPLY', 'h_degree_average', 'h_mst', 'MAX', 'h_global_min_flow', 'h_eigen', 'PDIV', 'MAX', 'h_lp_relaxation', 'h_1tree', 'MAX', 'MAX', 'ADD']",batch_logs\21.txt_log.txt
-84.txt,40.51,0.0,['h_eigen'],batch_logs\84.txt_log.txt
-29.txt,66.41,0.2287917737789203,"['h_degree_average', 'h_global_min_flow', 'h_mst', 'h_eigen', 'MAX', 'MAX', 'SUBTRACT']",batch_logs\29.txt_log.txt
-47.txt,40.99,0.1892744479495268,"[3.39, 'h_eigen', 'MULTIPLY', 9.88, 'h_global_min_flow', 'MULTIPLY', 5.12, 'h_1tree', 'MULTIPLY', 'SUBTRACT', 'h_assignment', 'h_lp_relaxation', 7.25, 'h_degree_average', 'MULTIPLY', 'h_mst', 'MIN', 'PDIV', 'MAX', 'MAX', 'PDIV']",batch_logs\47.txt_log.txt
-71.txt,30.33,0.2372881355932203,"[3.25, 'h_1tree', 'MULTIPLY', 'h_eigen', 'MULTIPLY', 0.86, 'h_degree_average', 'MULTIPLY', 'h_global_min_flow', 'h_assignment', 'MAX', 'MAX', 'SUBTRACT']",batch_logs\71.txt_log.txt
-5.txt,51.2,0.1320754716981132,"[8.7, 'h_1tree', 'MULTIPLY', 4.4, 'h_assignment', 'MULTIPLY', 'h_degree_average', 'h_lp_relaxation', 3.24, 'h_mst', 'MULTIPLY', 'MIN', 'PDIV', 'h_global_min_flow', 2.26, 'h_eigen', 'MULTIPLY', 'ADD', 'ADD', 'MIN', 'PDIV']",batch_logs\5.txt_log.txt
-30.txt,50.59,0.0,"['h_global_min_flow', 'h_degree_average', 'ADD']",batch_logs\30.txt_log.txt
-95.txt,50.8,0.0,['h_eigen'],batch_logs\95.txt_log.txt
+98.txt,40.42,0.0,['h_1tree'],batch_logs\98.txt_log.txt
+91.txt,20.22,0.049315068493150684,"[0.06, 'h_eigen', 'MULTIPLY']",batch_logs\91.txt_log.txt
+18.txt,50.99,0.0,['h_global_min_flow'],batch_logs\18.txt_log.txt
+12.txt,40.49,0.0,['h_eigen'],batch_logs\12.txt_log.txt
+49.txt,40.24,0.0,['h_lp_relaxation_3_idx'],batch_logs\49.txt_log.txt
+99.txt,40.41,0.043478260869565216,"['h_eigen', 0.13, 'h_global_min_flow', 'MULTIPLY', 'PDIV']",batch_logs\99.txt_log.txt
+85.txt,40.3,0.0,['h_1tree'],batch_logs\85.txt_log.txt
+26.txt,40.36,0.0,"[0.22, 'h_mst', 'MULTIPLY']",batch_logs\26.txt_log.txt
+1.txt,50.34,0.0,"[9.91, 'h_1tree', 'MULTIPLY']",batch_logs\1.txt_log.txt
+53.txt,40.57,0.07764705882352942,['h_global_min_flow'],batch_logs\53.txt_log.txt
+86.txt,50.6,0.0,['h_assignment'],batch_logs\86.txt_log.txt
+95.txt,30.54,0.0,"[0.81, 'h_assignment', 'MULTIPLY']",batch_logs\95.txt_log.txt
+19.txt,30.31,0.0,"[0.4, 'h_1tree', 'MULTIPLY']",batch_logs\19.txt_log.txt
+21.txt,40.16,0.0027247956403269754,"[1.95, 'h_lp_relaxation_2_idx', 'MULTIPLY', 8.62, 'h_lp_relaxation_2_idx', 'MULTIPLY', 'PDIV']",batch_logs\21.txt_log.txt
+84.txt,20.06,0.0,['h_lp_relaxation_3_idx'],batch_logs\84.txt_log.txt
+29.txt,40.22,0.0,['h_1tree'],batch_logs\29.txt_log.txt
+47.txt,40.32,0.0,['h_1tree'],batch_logs\47.txt_log.txt
+71.txt,40.38,0.0,"['h_eigen', 'h_mst', 'MIN']",batch_logs\71.txt_log.txt
+5.txt,50.48,0.0,"[1.15, 'h_lp_relaxation_2_idx', 'MULTIPLY']",batch_logs\5.txt_log.txt
+30.txt,50.46,0.035623409669211195,"[4.88, 'h_eigen', 'MULTIPLY', 5.02, 'h_eigen', 'MULTIPLY', 'PDIV']",batch_logs\30.txt_log.txt
