@@ -1,0 +1,42 @@
+Solver: CustomDualBoundCABSv1 from DIDPPy v0.7.2-a
+Searched with beam size: 1, expanded: 26, elapsed time: 0.0831743
+Searched with beam size: 2, expanded: 121, elapsed time: 0.1822646
+New primal bound: 1839, expanded: 121, elapsed time: 0.1823685
+Searched with beam size: 4, expanded: 311, elapsed time: 0.2710259
+New primal bound: 1757, expanded: 311, elapsed time: 0.2712132
+Searched with beam size: 8, expanded: 690, elapsed time: 0.4209962
+Searched with beam size: 16, expanded: 1425, elapsed time: 0.6703791
+New primal bound: 1723, expanded: 1425, elapsed time: 0.6705901
+Searched with beam size: 32, expanded: 2736, elapsed time: 1.1177011000000001
+Searched with beam size: 64, expanded: 4683, elapsed time: 1.6989901
+Searched with beam size: 128, expanded: 7370, elapsed time: 2.4550244
+Searched with beam size: 256, expanded: 10290, elapsed time: 3.2333695000000002
+
+============================================================
+                    📋 SOLVER RUN REPORT                     
+============================================================
+🎯 SOLUTION STATUS:
+   • Cost:              1723.0
+   • Status:            ✅ Proven Optimal
+   • Nodes Generated:   11,920
+   • Nodes Expanded:    10,290
+   • Branching Factor:  ~1.16
+------------------------------------------------------------
+⏱️  TIME DISTRIBUTION (Total: 3.2593s):
+   [Pure CABS time:  53.6%] 🆚 [Bridge time:  46.4%]
+
+   1. 🟢 Pure CABS (Search):    1.7475 s
+      └─ Average time per expanded state:   0.1698 ms
+   2. 🔴 Total Bridge Time:     1.5118 s
+      ├─ 🐍 Dual Bound Calculation Time: :     1.3485 s  ( 89.2% of bridge time)
+      └─ 🌉 Switching Time:  0.1633 s  ( 10.8% of bridge time)
+------------------------------------------------------------
+📊 PYTHON DUAL BOUND CALL STATS:
+   • Total Calls:       27,064
+   • Avg Bridge Time:   0.0559 ms
+   • Avg Pure Calc:     0.0498 ms
+   • Avg Switching:     0.0060 ms
+   • Throughput:        8,304 calls/sec
+============================================================
+
+{"status": "success", "cost": 1723.0, "is_optimal": true, "generated": 11920, "expanded": 10290, "duration": 3.401789903640747, "stats": {"total_duration": 3.2592954635620117, "total_bridge_time": 1.5118, "pure_cabs_time": 1.7474954635620117, "switching_overhead": 0.1633284990455257, "python_dual_bound_calc_time": 1.3484715009544743, "total_calls": 27064}}

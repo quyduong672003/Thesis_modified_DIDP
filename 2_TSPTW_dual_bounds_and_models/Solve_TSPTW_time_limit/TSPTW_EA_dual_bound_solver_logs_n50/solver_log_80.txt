@@ -1,0 +1,45 @@
+Solver: CustomDualBoundCABSv1 from DIDPPy v0.7.2-a
+Searched with beam size: 1, expanded: 50, elapsed time: 0.0174424
+New primal bound: 2082, expanded: 50, elapsed time: 0.0175573
+Searched with beam size: 2, expanded: 147, elapsed time: 0.0500777
+New primal bound: 1957, expanded: 147, elapsed time: 0.0505148
+Searched with beam size: 4, expanded: 336, elapsed time: 0.114614
+New primal bound: 1927, expanded: 336, elapsed time: 0.1148466
+Searched with beam size: 8, expanded: 712, elapsed time: 0.2263796
+New primal bound: 1827, expanded: 712, elapsed time: 0.2266213
+Searched with beam size: 16, expanded: 1405, elapsed time: 0.4314409
+New primal bound: 1769, expanded: 1405, elapsed time: 0.4320029
+Searched with beam size: 32, expanded: 2531, elapsed time: 0.7649314
+Searched with beam size: 64, expanded: 4111, elapsed time: 1.2092373
+Searched with beam size: 128, expanded: 6179, elapsed time: 1.8034493999999999
+Searched with beam size: 256, expanded: 8936, elapsed time: 5.8464613
+Searched with beam size: 512, expanded: 12226, elapsed time: 6.6800386
+
+============================================================
+                    📋 SOLVER RUN REPORT                     
+============================================================
+🎯 SOLUTION STATUS:
+   • Cost:              1769.0
+   • Status:            ✅ Proven Optimal
+   • Nodes Generated:   13,770
+   • Nodes Expanded:    12,226
+   • Branching Factor:  ~1.13
+------------------------------------------------------------
+⏱️  TIME DISTRIBUTION (Total: 6.7095s):
+   [Pure CABS time:  58.5%] 🆚 [Bridge time:  41.5%]
+
+   1. 🟢 Pure CABS (Search):    3.9283 s
+      └─ Average time per expanded state:   0.3213 ms
+   2. 🔴 Total Bridge Time:     2.7812 s
+      ├─ 🐍 Dual Bound Calculation Time: :     2.4521 s  ( 88.2% of bridge time)
+      └─ 🌉 Switching Time:  0.3291 s  ( 11.8% of bridge time)
+------------------------------------------------------------
+📊 PYTHON DUAL BOUND CALL STATS:
+   • Total Calls:       31,139
+   • Avg Bridge Time:   0.0893 ms
+   • Avg Pure Calc:     0.0787 ms
+   • Avg Switching:     0.0106 ms
+   • Throughput:        4,641 calls/sec
+============================================================
+
+{"status": "success", "cost": 1769.0, "is_optimal": true, "generated": 13770, "expanded": 12226, "duration": 6.774430274963379, "stats": {"total_duration": 6.7095372676849365, "total_bridge_time": 2.7812, "pure_cabs_time": 3.9283372676849364, "switching_overhead": 0.32912990101850603, "python_dual_bound_calc_time": 2.452070098981494, "total_calls": 31139}}

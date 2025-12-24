@@ -1,0 +1,45 @@
+===========================================
+ CLEAN RE-CREATION OF PYTHON VENV
+ WITH REQUIRED DEPENDENCIES
+===========================================
+
+cd 'C:\Users\ACER\Desktop\Code\0_Thesis_implementation\2_DIDP_custom_search_guidance_local\Thesis_modified_DIDP'
+1. Delete the OLD venv (it contains wrong paths):
+------------------------------------------------
+PowerShell:
+    Remove-Item -Recurse -Force venv
+
+
+2. Create a NEW venv in the renamed folder:
+-------------------------------------------
+    python -m venv venv
+
+
+3. Activate the environment:
+----------------------------
+    Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+    .\main_venv\Scripts\Activate.ps1
+
+
+4. Upgrade pip (always recommended):
+------------------------------------
+    python -m pip install --upgrade pip
+
+
+5. Install REQUIRED PACKAGES:
+-----------------------------
+
+    pip install matplotlib-inline==0.2.1
+    pip install maturin==1.10.0
+    pip install numpy==2.3.4
+    pip install pandas==2.3.3
+    pip install scipy==1.16.3
+    pip install pulp
+    pip install notebook
+    pip install ipykernel
+    pip install vrplib
+    pip install ortools
+    pip install matplotlib
+--------------------------------------------
+ ENVIRONMENT IS NOW CLEAN AND FULLY WORKING.
+--------------------------------------------

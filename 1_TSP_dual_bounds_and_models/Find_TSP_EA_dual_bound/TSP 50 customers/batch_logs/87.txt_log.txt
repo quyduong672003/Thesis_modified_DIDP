@@ -1,0 +1,39 @@
+--- Initialization: Generating Population of size 15 - 10 generations - solver limit at 10 seconds ---
+Generating Initial Population at time: Sat Dec 20 10:14:19 2025
+-> Seeding: 1 Random Terminal + 1 Simple Subtree
+Initial Population Generated at time: Sat Dec 20 10:16:57 2025
+Initialization time 158.04284405708313
+Initial Best Fitness: 0.3598854833277189
+Uniform crossover produced invalid offspring: Invalid Chromosome: No heuristics found (Pure Constant).
+Using fallback parent chromosome for this uniform crossover.
+Gen 1: Best Fitness = 0.3598854833277189 | Global Best = 0.3598854833277189
+Subtree crossover produced invalid offspring: Invalid Chromosome: No heuristics found (Pure Constant).
+Using fallback parent chromosome for this subtree crossover.
+Gen 2: Best Fitness = 0.2946278208150884 | Global Best = 0.2946278208150884
+Gen 3: Best Fitness = 0.2946278208150884 | Global Best = 0.2946278208150884
+Gen 4: Best Fitness = 0.2946278208150884 | Global Best = 0.2946278208150884
+Gen 5: Best Fitness = 0.2946278208150884 | Global Best = 0.2946278208150884
+Gen 6: Best Fitness = 0.2946278208150884 | Global Best = 0.2946278208150884
+Subtree crossover produced invalid offspring: Invalid Chromosome: No heuristics found (Pure Constant).
+Using fallback parent chromosome for this subtree crossover.
+Gen 7: Best Fitness = 0.2946278208150884 | Global Best = 0.2946278208150884
+Subtree crossover produced invalid offspring: Invalid Chromosome: No heuristics found (Pure Constant).
+Using fallback parent chromosome for this subtree crossover.
+Gen 8: Best Fitness = 0.27989221960255894 | Global Best = 0.27989221960255894
+Uniform crossover produced invalid offspring: Invalid Chromosome: No heuristics found (Pure Constant).
+Using fallback parent chromosome for this uniform crossover.
+Gen 9: Best Fitness = 0.27989221960255894 | Global Best = 0.27989221960255894
+Gen 10: Best Fitness = 0.27989221960255894 | Global Best = 0.27989221960255894
+
+========================================
+      PERFORMANCE PROFILING REPORT      
+========================================
+Total Runtime:    1450.0362 seconds
+========================================
+--- Evolution Completed ---
+
+
+========================================
+FINAL BEST INDIVIDUAL
+========================================
+{'chromosome': [1.92, 'h_eigen', 'MULTIPLY'], 'fitness': 0.27989221960255894}

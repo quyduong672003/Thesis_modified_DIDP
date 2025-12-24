@@ -1,0 +1,21 @@
+Instance,Total_Time_(s),Best_Fitness,Best_Chromosome,Log_File
+85.txt,1273.08,0.0,"[6.02, 'h_1tree', 'MULTIPLY', 'h_assignment', 'MAX']",TSPTW_50_cus_batch_logs\85.txt_log.txt
+12.txt,1426.1,0.0,"[7.23, 'h_degree_average', 'MULTIPLY']",TSPTW_50_cus_batch_logs\12.txt_log.txt
+14.txt,787.92,0.0,['h_eigen'],TSPTW_50_cus_batch_logs\14.txt_log.txt
+72.txt,1430.97,0.0,['h_mst'],TSPTW_50_cus_batch_logs\72.txt_log.txt
+46.txt,1049.81,0.0,['h_1tree'],TSPTW_50_cus_batch_logs\46.txt_log.txt
+3.txt,903.84,0.0,"[9.07, 'h_degree_average', 'MULTIPLY']",TSPTW_50_cus_batch_logs\3.txt_log.txt
+64.txt,917.8,0.0,"[3.43, 'h_eigen', 'MULTIPLY']",TSPTW_50_cus_batch_logs\64.txt_log.txt
+56.txt,1595.36,0.0,['h_assignment'],TSPTW_50_cus_batch_logs\56.txt_log.txt
+84.txt,911.86,0.0,"[8.89, 'h_mst', 'MULTIPLY']",TSPTW_50_cus_batch_logs\84.txt_log.txt
+27.txt,1551.77,0.0,"['h_global_min_flow', 7.43, 'h_degree_average', 'MULTIPLY', 'SUBTRACT']",TSPTW_50_cus_batch_logs\27.txt_log.txt
+10.txt,784.2,0.0,['h_assignment'],TSPTW_50_cus_batch_logs\10.txt_log.txt
+31.txt,1385.34,0.0,"['h_eigen', 'h_assignment', 'SUBTRACT', 'h_1tree', 'h_1tree', 'PDIV', 'MAX']",TSPTW_50_cus_batch_logs\31.txt_log.txt
+59.txt,1726.82,0.0,['h_1tree'],TSPTW_50_cus_batch_logs\59.txt_log.txt
+80.txt,952.47,0.0,['h_global_min_flow'],TSPTW_50_cus_batch_logs\80.txt_log.txt
+75.txt,871.87,0.0,['h_assignment'],TSPTW_50_cus_batch_logs\75.txt_log.txt
+0.txt,1382.68,0.0,['h_global_min_flow'],TSPTW_50_cus_batch_logs\0.txt_log.txt
+29.txt,950.0,0.0,"[9.87, 'h_1tree', 'MULTIPLY']",TSPTW_50_cus_batch_logs\29.txt_log.txt
+51.txt,1581.54,0.0,"[1.43, 'h_degree_average', 'MULTIPLY']",TSPTW_50_cus_batch_logs\51.txt_log.txt
+52.txt,801.74,0.0,"[7.57, 'h_assignment', 'MULTIPLY']",TSPTW_50_cus_batch_logs\52.txt_log.txt
+48.txt,1271.19,0.0,['h_1tree'],TSPTW_50_cus_batch_logs\48.txt_log.txt

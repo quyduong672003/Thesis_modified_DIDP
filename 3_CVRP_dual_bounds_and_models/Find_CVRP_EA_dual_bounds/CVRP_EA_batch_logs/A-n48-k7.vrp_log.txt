@@ -1,0 +1,37 @@
+--- Initialization: Generating Population of size 15 - 10 generations - solver limit at 10 seconds ---
+Generating Initial Population at time: Tue Dec 23 20:01:09 2025
+-> Seeding: 1 Random Terminal + 1 Simple Subtree
+Initial Population Generated at time: Tue Dec 23 20:03:43 2025
+Initialization time 153.5259985923767
+Initial Best Fitness: 0.1979022216974055
+Gen 1: Best Fitness = 0.1979022216974055 | Global Best = 0.1979022216974055
+Gen 2: Best Fitness = 0.1979022216974055 | Global Best = 0.1979022216974055
+Gen 3: Best Fitness = 0.1979022216974055 | Global Best = 0.1979022216974055
+Gen 4: Best Fitness = 0.1979022216974055 | Global Best = 0.1979022216974055
+Gen 5: Best Fitness = 0.1979022216974055 | Global Best = 0.1979022216974055
+Gen 6: Best Fitness = 0.1979022216974055 | Global Best = 0.1979022216974055
+Subtree crossover produced invalid offspring: Invalid Chromosome: No heuristics found (Pure Constant).
+Using fallback parent chromosome for this subtree crossover.
+Gen 7: Best Fitness = 0.18068155331268496 | Global Best = 0.18068155331268496
+Gen 8: Best Fitness = 0.17598716390082897 | Global Best = 0.17598716390082897
+Gen 9: Best Fitness = 0.17598716390082897 | Global Best = 0.17598716390082897
+Subtree crossover produced invalid offspring: Invalid Chromosome: No heuristics found (Pure Constant).
+Using fallback parent chromosome for this subtree crossover.
+Subtree crossover produced invalid offspring: Invalid Chromosome: No heuristics found (Pure Constant).
+Using fallback parent chromosome for this subtree crossover.
+Uniform crossover produced invalid offspring: Invalid Chromosome: No heuristics found (Pure Constant).
+Using fallback parent chromosome for this uniform crossover.
+Gen 10: Best Fitness = 0.17598716390082897 | Global Best = 0.17598716390082897
+
+========================================
+      PERFORMANCE PROFILING REPORT      
+========================================
+Total Runtime:    1641.6694 seconds
+========================================
+--- Evolution Completed ---
+
+
+========================================
+FINAL BEST INDIVIDUAL
+========================================
+{'chromosome': [0.14, 0.14, 'h_global_min_flow', 'MULTIPLY', 'MULTIPLY'], 'fitness': 0.17598716390082897}

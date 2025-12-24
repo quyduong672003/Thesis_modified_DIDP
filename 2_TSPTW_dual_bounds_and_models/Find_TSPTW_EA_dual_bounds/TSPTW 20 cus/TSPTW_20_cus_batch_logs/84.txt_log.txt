@@ -1,0 +1,31 @@
+--- Initialization: Generating Population of size 15 - 10 generations - solver limit at 10 seconds ---
+Generating Initial Population at time: Sat Dec 20 20:18:00 2025
+-> Seeding: 1 Random Terminal + 1 Simple Subtree
+Initial Population Generated at time: Sat Dec 20 20:19:02 2025
+Initialization time 61.0454535484314
+Initial Best Fitness: 0.0
+Gen 1: Best Fitness = 0.0 | Global Best = 0.0
+Gen 2: Best Fitness = 0.0 | Global Best = 0.0
+Gen 3: Best Fitness = 0.0 | Global Best = 0.0
+Gen 4: Best Fitness = 0.0 | Global Best = 0.0
+Gen 5: Best Fitness = 0.0 | Global Best = 0.0
+Gen 6: Best Fitness = 0.0 | Global Best = 0.0
+Gen 7: Best Fitness = 0.0 | Global Best = 0.0
+Uniform crossover produced invalid offspring: Invalid Chromosome: No heuristics found (Pure Constant).
+Using fallback parent chromosome for this uniform crossover.
+Gen 8: Best Fitness = 0.0 | Global Best = 0.0
+Gen 9: Best Fitness = 0.0 | Global Best = 0.0
+Gen 10: Best Fitness = 0.0 | Global Best = 0.0
+
+========================================
+      PERFORMANCE PROFILING REPORT      
+========================================
+Total Runtime:    782.5941 seconds
+========================================
+--- Evolution Completed ---
+
+
+========================================
+FINAL BEST INDIVIDUAL
+========================================
+{'chromosome': [6.57, 'h_mst', 'MULTIPLY'], 'fitness': 0.0}

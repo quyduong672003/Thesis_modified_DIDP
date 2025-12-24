@@ -1,0 +1,2 @@
+Instance,Objective Value,Optimality,Nodes Expanded,Nodes Generated,Total Times (s),Bridging Time (s),Python Bound Time (s),Dual Bound Chromosome
+61.txt,600.0,False,227254,936692,1849.2814288139343,1631.4597,1566.5136643949918,['h_mst']

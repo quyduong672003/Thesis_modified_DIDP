@@ -1,6 +1,0 @@
-Instance,Cost,Nodes Expanded,Nodes Generated,Running Time (s),Is Optimal,Infeasibility
-X-n733-k159.vrp,Inf,148,1269,10.07304310798645,False (No Sol),False
-X-n401-k29.vrp,73419.87575827824,649,3769,10.044105529785156,False (Time Limit),False
-X-n275-k28.vrp,24139.353189052774,1242,7283,10.02157211303711,False (Time Limit),False
-X-n153-k22.vrp,Inf,4572,23229,10.000953197479248,False (No Sol),False
-X-n308-k13.vrp,33546.34949577914,992,5732,10.022869110107422,False (Time Limit),False

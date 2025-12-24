@@ -1,8 +1,8 @@
 
 --- Rust-Python Bridge Stats ---
-Timestamp: Instant { t: 208884.4167651s }
-Total calls: 32859
-Total time in Python: 9.1421s
-Avg time per call: 0.2782 ms
+Timestamp: Instant { t: 1263.1467447s }
+Total calls: 11165
+Total time in Python: 1.6941s
+Avg time per call: 0.1517 ms
 --------------------------------
 
