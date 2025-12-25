@@ -1,24 +1,24 @@
 --- Initialization: Generating Population of size 15 - 10 generations - solver limit at 10 seconds ---
-Generating Initial Population at time: Thu Dec 25 11:56:08 2025
+Generating Initial Population at time: Thu Dec 25 16:36:50 2025
 -> Seeding: 1 Random Terminal + 1 Simple Subtree
-Initial Population Generated at time: Thu Dec 25 11:58:41 2025
-Initialization time 153.60561680793762
-Initial Best Fitness: 0.24230145867098865
-Gen 1: Best Fitness = 0.24230145867098865 | Global Best = 0.24230145867098865
-Gen 2: Best Fitness = 0.24230145867098865 | Global Best = 0.24230145867098865
-Gen 3: Best Fitness = 0.24230145867098865 | Global Best = 0.24230145867098865
-Gen 4: Best Fitness = 0.24230145867098865 | Global Best = 0.24230145867098865
-Gen 5: Best Fitness = 0.24230145867098865 | Global Best = 0.24230145867098865
-Gen 6: Best Fitness = 0.24230145867098865 | Global Best = 0.24230145867098865
-Gen 7: Best Fitness = 0.24230145867098865 | Global Best = 0.24230145867098865
-Gen 8: Best Fitness = 0.24230145867098865 | Global Best = 0.24230145867098865
-Gen 9: Best Fitness = 0.24230145867098865 | Global Best = 0.24230145867098865
-Gen 10: Best Fitness = 0.24230145867098865 | Global Best = 0.24230145867098865
+Initial Population Generated at time: Thu Dec 25 16:39:25 2025
+Initialization time 155.12749767303467
+Initial Best Fitness: 3.260940032414911
+Gen 1: Best Fitness = 3.260940032414911 | Global Best = 3.260940032414911
+Gen 2: Best Fitness = 3.260940032414911 | Global Best = 3.260940032414911
+Gen 3: Best Fitness = 3.260940032414911 | Global Best = 3.260940032414911
+Gen 4: Best Fitness = 3.260940032414911 | Global Best = 3.260940032414911
+Gen 5: Best Fitness = 3.260940032414911 | Global Best = 3.260940032414911
+Gen 6: Best Fitness = 3.260940032414911 | Global Best = 3.260940032414911
+Gen 7: Best Fitness = 3.260940032414911 | Global Best = 3.260940032414911
+Gen 8: Best Fitness = 3.260940032414911 | Global Best = 3.260940032414911
+Gen 9: Best Fitness = 3.260940032414911 | Global Best = 3.260940032414911
+Gen 10: Best Fitness = 3.260940032414911 | Global Best = 3.260940032414911
 
 ========================================
       PERFORMANCE PROFILING REPORT      
 ========================================
-Total Runtime:    1637.4405 seconds
+Total Runtime:    1520.8658 seconds
 ========================================
 --- Evolution Completed ---
 
@@ -26,4 +26,4 @@ Total Runtime:    1637.4405 seconds
 ========================================
 FINAL BEST INDIVIDUAL
 ========================================
-{'chromosome': ['h_lp_relaxation', 'h_simplified_shifting_bottleneck', 'PDIV', 4.0, 'h_1mach_preemptive', 'MULTIPLY', 7.44, 'h_lp_relaxation', 'MULTIPLY', 'SUBTRACT', 'MAX', 2.13, 'h_1mach_preemptive', 'MULTIPLY', 6.44, 'h_1mach_preemptive', 'MULTIPLY', 'MAX', 'h_simplified_shifting_bottleneck', 'h_1mach_non_preemptive', 'MULTIPLY', 'ADD', 'SUBTRACT', 5.49, 'h_1mach_non_preemptive', 'MULTIPLY', 'h_machine_based', 'MULTIPLY', 7.28, 'h_simplified_shifting_bottleneck', 'MULTIPLY', 'h_machine_based', 'SUBTRACT', 'MULTIPLY', 8.48, 'h_simplified_shifting_bottleneck', 'MULTIPLY', 3.72, 'h_lp_relaxation', 'MULTIPLY', 'MIN', 'h_lp_relaxation', 8.34, 'h_lp_relaxation', 'MULTIPLY', 'MULTIPLY', 'PDIV', 'MAX', 'ADD', 8.65, 'h_machine_based', 'MULTIPLY', 'h_simplified_shifting_bottleneck', 'ADD', 4.3, 'h_machine_based', 'MULTIPLY', 6.16, 'h_lp_relaxation', 'MULTIPLY', 'MIN', 'MIN', 8.68, 'h_simplified_shifting_bottleneck', 'MULTIPLY', 0.75, 'h_simplified_shifting_bottleneck', 'MULTIPLY', 'MIN', 'h_1mach_preemptive', 5.69, 'h_1mach_non_preemptive', 'MULTIPLY', 'SUBTRACT', 'SUBTRACT', 'SUBTRACT', 0.51, 'h_machine_based', 'MULTIPLY', 'h_1mach_preemptive', 'MIN', 'h_simplified_shifting_bottleneck', 8.69, 'h_job_based', 'MULTIPLY', 'ADD', 'PDIV', 'h_job_based', 'h_lp_relaxation', 'MAX', 8.15, 'h_job_based', 'MULTIPLY', 'h_1mach_non_preemptive', 'PDIV', 'MAX', 'ADD', 'MULTIPLY', 'MULTIPLY'], 'fitness': 0.24230145867098865}
+{'chromosome': ['h_1mach_preemptive', 'h_1mach_non_preemptive', 5.84, 'h_simplified_shifting_bottleneck', 'MULTIPLY', 'MAX', 8.5, 'h_job_based', 'MULTIPLY', 'h_machine_based', 'h_lp_relaxation', 'MAX', 'MAX', 'PDIV', 'MAX'], 'fitness': 3.260940032414911}

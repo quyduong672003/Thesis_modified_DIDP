@@ -5,4 +5,6 @@ R104.txt,2499.45,0.027836946893183,['h_assignment'],CVRPTW_EA_Batch_Logs\R104_lo
 R203.txt,2495.39,0.0015949323596104,"[0.89, 'h_assignment', 'MULTIPLY']",CVRPTW_EA_Batch_Logs\R203_log.txt
 RC104.txt,2728.94,0.0540303599917636,['h_flow'],CVRPTW_EA_Batch_Logs\RC104_log.txt
 C1_2_10.TXT,11289.91,0.0370656821277919,"[1.02, 'h_global_min_flow', 'MULTIPLY']",CVRPTW_EA_Batch_Logs\C1_2_10_log.txt
-C2_2_10.TXT,10076.88,0.04117298783520602,"[9.49, 'h_assignment', 'MULTIPLY']",CVRPTW_EA_Batch_Logs\C2_2_10_log.txt
+C2_2_10.TXT,10076.88,0.041172987835206,"[9.49, 'h_assignment', 'MULTIPLY']",CVRPTW_EA_Batch_Logs\C2_2_10_log.txt
+R1_2_10.TXT,10868.65,0.0049083071577402,['h_mst'],CVRPTW_EA_Batch_Logs\R1_2_10_log.txt
+R2_2_10.TXT,13763.46,0.06295240547580538,"['h_assignment', 'h_1tree', 'MULTIPLY']",CVRPTW_EA_Batch_Logs\R2_2_10_log.txt
