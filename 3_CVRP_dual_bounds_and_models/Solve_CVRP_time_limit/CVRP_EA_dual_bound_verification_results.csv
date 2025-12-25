@@ -1,0 +1,2 @@
+Instance,Objective Value,Optimality,Nodes Expanded,Nodes Generated,Total Times (s),Dual Bound Chromosome,Bridging Time (s),Python Bound Time (s)
+A-n39-k6.vrp,891.4542979875386,False,715231,2939282,1840.0441443920135,"[2.96, 'h_global_min_flow', 'MULTIPLY']",1361.8456,1227.2572402007645

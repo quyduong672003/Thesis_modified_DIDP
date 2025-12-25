@@ -1,0 +1,29 @@
+--- Initialization: Generating Population of size 15 - 10 generations - solver limit at 10 seconds ---
+Generating Initial Population at time: Wed Dec 24 20:54:02 2025
+-> Seeding: 1 Random Terminal + 1 Simple Subtree
+Initial Population Generated at time: Wed Dec 24 20:58:29 2025
+Initialization time 267.3148510456085
+Initial Best Fitness: inf
+Gen 1: Best Fitness = inf | Global Best = inf
+Gen 2: Best Fitness = inf | Global Best = inf
+Gen 3: Best Fitness = inf | Global Best = inf
+Gen 4: Best Fitness = inf | Global Best = inf
+Gen 5: Best Fitness = inf | Global Best = inf
+Gen 6: Best Fitness = inf | Global Best = inf
+Gen 7: Best Fitness = inf | Global Best = inf
+Gen 8: Best Fitness = inf | Global Best = inf
+Gen 9: Best Fitness = inf | Global Best = inf
+Gen 10: Best Fitness = 0.2350268078109722 | Global Best = 0.2350268078109722
+
+========================================
+      PERFORMANCE PROFILING REPORT      
+========================================
+Total Runtime:    2526.0992 seconds
+========================================
+--- Evolution Completed ---
+
+
+========================================
+FINAL BEST INDIVIDUAL
+========================================
+{'chromosome': [8.45, 'h_degree_average', 'ADD'], 'fitness': 0.2350268078109722}

@@ -1,0 +1,51 @@
+Solver: CustomDualBoundCABSv1 from DIDPPy v0.7.2-a
+Searched with beam size: 1, expanded: 50, elapsed time: 0.4484795
+New primal bound: 655, expanded: 50, elapsed time: 0.4485981
+Searched with beam size: 2, expanded: 149, elapsed time: 1.0817411
+New primal bound: 628, expanded: 149, elapsed time: 1.0819757
+Searched with beam size: 4, expanded: 344, elapsed time: 2.0375373
+New primal bound: 556, expanded: 344, elapsed time: 2.0376901
+Searched with beam size: 8, expanded: 733, elapsed time: 3.9756792
+Searched with beam size: 16, expanded: 1508, elapsed time: 6.8979585
+Searched with beam size: 32, expanded: 3043, elapsed time: 12.5872044
+New primal bound: 553, expanded: 3043, elapsed time: 12.5903302
+Searched with beam size: 64, expanded: 6081, elapsed time: 23.59341
+Searched with beam size: 128, expanded: 12089, elapsed time: 51.2510482
+New primal bound: 551, expanded: 12089, elapsed time: 51.2511523
+Searched with beam size: 256, expanded: 24079, elapsed time: 126.4926363
+New primal bound: 542, expanded: 24079, elapsed time: 126.4927458
+Searched with beam size: 512, expanded: 47884, elapsed time: 289.0320044
+New primal bound: 529, expanded: 47884, elapsed time: 289.0321167
+Searched with beam size: 1024, expanded: 95189, elapsed time: 588.6898625
+Searched with beam size: 2048, expanded: 189303, elapsed time: 1156.4324242
+Searched with beam size: 4096, expanded: 242319, elapsed time: 1800.0259123
+Reached time limit.
+
+============================================================
+                    📋 SOLVER RUN REPORT                     
+============================================================
+🎯 SOLUTION STATUS:
+   • Cost:              529.0
+   • Status:            ⚠️  Suboptimal / Timeout
+   • Nodes Generated:   1,047,554
+   • Nodes Expanded:    242,319
+   • Branching Factor:  ~4.32
+------------------------------------------------------------
+⏱️  TIME DISTRIBUTION (Total: 1805.7903s):
+   [Pure CABS time:   7.6%] 🆚 [Bridge time:  92.4%]
+
+   1. 🟢 Pure CABS (Search):    137.4350 s
+      └─ Average time per expanded state:   0.5672 ms
+   2. 🔴 Total Bridge Time:     1668.3553 s
+      ├─ 🐍 Dual Bound Calculation Time: :     1611.9351 s  ( 96.6% of bridge time)
+      └─ 🌉 Switching Time:  56.4202 s  (  3.4% of bridge time)
+------------------------------------------------------------
+📊 PYTHON DUAL BOUND CALL STATS:
+   • Total Calls:       6,785,764
+   • Avg Bridge Time:   0.2459 ms
+   • Avg Pure Calc:     0.2375 ms
+   • Avg Switching:     0.0083 ms
+   • Throughput:        3,758 calls/sec
+============================================================
+
+{"status": "success", "cost": 529.0, "is_optimal": false, "generated": 1047554, "expanded": 242319, "duration": 1805.826964378357, "stats": {"total_duration": 1805.7903213500977, "total_bridge_time": 1668.3553, "pure_cabs_time": 137.4350213500977, "switching_overhead": 56.42022139957203, "python_dual_bound_calc_time": 1611.935078600428, "total_calls": 6785764}}

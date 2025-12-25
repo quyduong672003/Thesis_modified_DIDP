@@ -15,3 +15,7 @@ Instance,Cost,Nodes Expanded,Nodes Generated,Running Time (s),Is Optimal,Infeasi
 59.txt,537.0,7580371,30285227,1801.1314346790314,False (Time Limit),False
 61.txt,633.0,7434889,30414037,1801.3186297416687,False (Time Limit),False
 75.txt,550.0,7627007,31781524,1801.4113547801971,False (Time Limit),False
+78.txt,609.0,7256800,29528683,1801.0977585315704,False (Time Limit),False
+79.txt,632.0,7343640,28240207,1801.028921842575,False (Time Limit),False
+87.txt,625.0,7267136,29355453,1801.4600868225098,False (Time Limit),False
+89.txt,550.0,7535998,31029940,1800.6029679775238,False (Time Limit),False

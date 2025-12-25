@@ -1,0 +1,43 @@
+--- Initialization: Generating Population of size 15 - 10 generations - solver limit at 10 seconds ---
+Generating Initial Population at time: Thu Dec 25 09:20:48 2025
+-> Seeding: 1 Random Terminal + 1 Simple Subtree
+Initial Population Generated at time: Thu Dec 25 09:36:08 2025
+Initialization time 920.0712833404541
+Initial Best Fitness: 0.04117298783520602
+Gen 1: Best Fitness = 0.04117298783520602 | Global Best = 0.04117298783520602
+Gen 2: Best Fitness = 0.04117298783520602 | Global Best = 0.04117298783520602
+Uniform crossover produced invalid offspring: Invalid Chromosome: No heuristics found (Pure Constant).
+Using fallback parent chromosome for this uniform crossover.
+Gen 3: Best Fitness = 0.04117298783520602 | Global Best = 0.04117298783520602
+Gen 4: Best Fitness = 0.04117298783520602 | Global Best = 0.04117298783520602
+Uniform crossover produced invalid offspring: Invalid Chromosome: No heuristics found (Pure Constant).
+Using fallback parent chromosome for this uniform crossover.
+Uniform crossover produced invalid offspring: Invalid Chromosome: No heuristics found (Pure Constant).
+Using fallback parent chromosome for this uniform crossover.
+Gen 5: Best Fitness = 0.04117298783520602 | Global Best = 0.04117298783520602
+Gen 6: Best Fitness = 0.04117298783520602 | Global Best = 0.04117298783520602
+Subtree crossover produced invalid offspring: Invalid Chromosome: No heuristics found (Pure Constant).
+Using fallback parent chromosome for this subtree crossover.
+Uniform crossover produced invalid offspring: Invalid Chromosome: No heuristics found (Pure Constant).
+Using fallback parent chromosome for this uniform crossover.
+Gen 7: Best Fitness = 0.04117298783520602 | Global Best = 0.04117298783520602
+Subtree crossover produced invalid offspring: Invalid Chromosome: No heuristics found (Pure Constant).
+Using fallback parent chromosome for this subtree crossover.
+Gen 8: Best Fitness = 0.04117298783520602 | Global Best = 0.04117298783520602
+Gen 9: Best Fitness = 0.04117298783520602 | Global Best = 0.04117298783520602
+Subtree crossover produced invalid offspring: Invalid Chromosome: No heuristics found (Pure Constant).
+Using fallback parent chromosome for this subtree crossover.
+Gen 10: Best Fitness = 0.04117298783520602 | Global Best = 0.04117298783520602
+
+========================================
+      PERFORMANCE PROFILING REPORT      
+========================================
+Total Runtime:    10065.0173 seconds
+========================================
+--- Evolution Completed ---
+
+
+========================================
+FINAL BEST INDIVIDUAL
+========================================
+{'chromosome': [9.49, 'h_assignment', 'MULTIPLY'], 'fitness': 0.04117298783520602}

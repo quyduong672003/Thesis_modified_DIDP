@@ -1,0 +1,39 @@
+--- Initialization: Generating Population of size 15 - 10 generations - solver limit at 10 seconds ---
+Generating Initial Population at time: Wed Dec 24 22:17:48 2025
+-> Seeding: 1 Random Terminal + 1 Simple Subtree
+Initial Population Generated at time: Wed Dec 24 22:21:52 2025
+Initialization time 244.42264080047607
+Initial Best Fitness: 0.11438844453588423
+Gen 1: Best Fitness = 0.11438844453588423 | Global Best = 0.11438844453588423
+Gen 2: Best Fitness = 0.11438844453588423 | Global Best = 0.11438844453588423
+Subtree crossover produced invalid offspring: Invalid Chromosome: No heuristics found (Pure Constant).
+Using fallback parent chromosome for this subtree crossover.
+Gen 3: Best Fitness = 0.02559474307370833 | Global Best = 0.02559474307370833
+Gen 4: Best Fitness = 0.02559474307370833 | Global Best = 0.02559474307370833
+Subtree crossover produced invalid offspring: Invalid Chromosome: No heuristics found (Pure Constant).
+Using fallback parent chromosome for this subtree crossover.
+Gen 5: Best Fitness = 0.02559474307370833 | Global Best = 0.02559474307370833
+Subtree crossover produced invalid offspring: Invalid Chromosome: No heuristics found (Pure Constant).
+Using fallback parent chromosome for this subtree crossover.
+Gen 6: Best Fitness = 0.0015949323596104817 | Global Best = 0.0015949323596104817
+Gen 7: Best Fitness = 0.0015949323596104817 | Global Best = 0.0015949323596104817
+Subtree crossover produced invalid offspring: Invalid Chromosome: No heuristics found (Pure Constant).
+Using fallback parent chromosome for this subtree crossover.
+Gen 8: Best Fitness = 0.0015949323596104817 | Global Best = 0.0015949323596104817
+Gen 9: Best Fitness = 0.0015949323596104817 | Global Best = 0.0015949323596104817
+Subtree crossover produced invalid offspring: Invalid Chromosome: No heuristics found (Pure Constant).
+Using fallback parent chromosome for this subtree crossover.
+Gen 10: Best Fitness = 0.0015949323596104817 | Global Best = 0.0015949323596104817
+
+========================================
+      PERFORMANCE PROFILING REPORT      
+========================================
+Total Runtime:    2495.2697 seconds
+========================================
+--- Evolution Completed ---
+
+
+========================================
+FINAL BEST INDIVIDUAL
+========================================
+{'chromosome': [0.89, 'h_assignment', 'MULTIPLY'], 'fitness': 0.0015949323596104817}

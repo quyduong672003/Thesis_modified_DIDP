@@ -1,0 +1,8 @@
+Instance,Total_Time_(s),Best_Fitness,Best_Chromosome,Log_File
+C104.txt,2698.56,0.0035895421251884,"['h_1tree', 'h_eigen', 'MULTIPLY']",CVRPTW_EA_Batch_Logs\C104_log.txt
+C201.txt,2526.21,0.2350268078109722,"[8.45, 'h_degree_average', 'ADD']",CVRPTW_EA_Batch_Logs\C201_log.txt
+R104.txt,2499.45,0.027836946893183,['h_assignment'],CVRPTW_EA_Batch_Logs\R104_log.txt
+R203.txt,2495.39,0.0015949323596104,"[0.89, 'h_assignment', 'MULTIPLY']",CVRPTW_EA_Batch_Logs\R203_log.txt
+RC104.txt,2728.94,0.0540303599917636,['h_flow'],CVRPTW_EA_Batch_Logs\RC104_log.txt
+C1_2_10.TXT,11289.91,0.0370656821277919,"[1.02, 'h_global_min_flow', 'MULTIPLY']",CVRPTW_EA_Batch_Logs\C1_2_10_log.txt
+C2_2_10.TXT,10076.88,0.04117298783520602,"[9.49, 'h_assignment', 'MULTIPLY']",CVRPTW_EA_Batch_Logs\C2_2_10_log.txt
