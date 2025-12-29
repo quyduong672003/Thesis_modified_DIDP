@@ -1,0 +1,8 @@
+Solver: CustomDualBoundCABSv1 from DIDPPy v0.7.2-a
+Searched with beam size: 1, expanded: 1, elapsed time: 27.6330709
+Reached time limit.
+{"status": "success", "history": [], "duration": 27.63271975517273}
+
+
+=== STDERR ===
+DEBUG: Loaded X-n181-k23.vrp | Nodes: 181, Capacity: 8, Vehicles: 23, Total Demand: 180

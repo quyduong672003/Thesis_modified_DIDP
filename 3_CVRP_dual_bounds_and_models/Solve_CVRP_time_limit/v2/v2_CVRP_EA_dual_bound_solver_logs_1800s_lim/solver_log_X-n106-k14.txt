@@ -1,0 +1,13 @@
+Solver: CustomDualBoundCABSv1 from DIDPPy v0.7.2-a
+Searched with beam size: 1, expanded: 106, elapsed time: 1.1144037
+New primal bound: 28901.48822894866, expanded: 106, elapsed time: 1.1145394
+Searched with beam size: 2, expanded: 317, elapsed time: 3.6598251
+New primal bound: 28723.14025094845, expanded: 317, elapsed time: 3.6601675
+Searched with beam size: 4, expanded: 738, elapsed time: 8.3391119
+New primal bound: 28472.10221501635, expanded: 738, elapsed time: 8.3393779
+Searched with beam size: 8, expanded: 1577, elapsed time: 16.5012968
+Searched with beam size: 16, expanded: 3253, elapsed time: 36.5170248
+New primal bound: 28366.854469952283, expanded: 3253, elapsed time: 36.5181487
+Searched with beam size: 32, expanded: 6600, elapsed time: 73.5404222
+Searched with beam size: 64, expanded: 13284, elapsed time: 147.5958663
+New primal bound: 28275.223119696457, expanded: 13284, elapsed time: 147.5960802

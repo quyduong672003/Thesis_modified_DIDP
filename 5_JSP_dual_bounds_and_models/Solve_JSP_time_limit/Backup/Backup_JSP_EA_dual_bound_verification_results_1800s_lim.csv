@@ -1,0 +1,5 @@
+Instance,Objective Value,Optimality,Nodes Expanded,Total Times (s),Bridging Time (s),Python Bound Time (s),Dual Bound Chromosome
+abz5.txt,3836.0,False,1795406,1850.2182939052582,1197.2261,1100.5867463729228,"['h_1mach_preemptive', 'h_1mach_non_preemptive', 5.84, 'h_simplified_shifting_bottleneck', 'MULTIPLY', 'MAX', 8.5, 'h_job_based', 'MULTIPLY', 'h_machine_based', 'h_lp_relaxation', 'MAX', 'MAX', 'PDIV', 'MAX']"
+ft06.txt,63.0,False,3314805,1830.0206997394562,619.0022,528.7882815492048,['h_job_based']
+ft10.txt,2313.0,False,2112278,1851.9751501083374,1205.2045,1116.2975684626435,"['h_1mach_preemptive', 4.61, 'h_job_based', 'MULTIPLY', 'PDIV']"
+la21.txt,4462.0,False,1205925,1862.549468755722,1258.3091,1182.9433973049745,['h_job_based']

@@ -1,0 +1,11 @@
+Instance,Objective Value,Optimality,Nodes Expanded,Total Times (s),Bridging Time (s),Python Bound Time (s),Dual Bound Chromosome
+abz5.txt,5258.0,False,14132,10.278786420822144,7.1071,6.63274560000616,"['h_1mach_preemptive', 'h_1mach_non_preemptive', 5.84, 'h_simplified_shifting_bottleneck', 'MULTIPLY', 'MAX', 8.5, 'h_job_based', 'MULTIPLY', 'h_machine_based', 'h_lp_relaxation', 'MAX', 'MAX', 'PDIV', 'MAX']"
+ft06.txt,80.0,False,35580,10.202066659927368,6.4874,5.685402099997646,['h_job_based']
+ft10.txt,2758.0,False,14364,10.27019715309143,7.1396,6.668153399979815,"['h_1mach_preemptive', 4.61, 'h_job_based', 'MULTIPLY', 'PDIV']"
+la07.txt,2193.0,False,11384,10.218618392944336,7.3368,6.780831700013778,"[0.08, 'h_simplified_shifting_bottleneck', 'MULTIPLY']"
+la21.txt,5724.0,False,6929,10.310266494750977,7.3799,7.021215399980633,['h_job_based']
+la26.txt,7901.0,False,3367,10.379129886627197,7.0353,6.589262700014956,['h_1mach_preemptive']
+ta01.txt,9072.0,False,5197,10.592998266220093,7.3105,7.026396599986697,"[7.55, 'h_job_based', 'MULTIPLY', 'h_job_based', 'PDIV']"
+ft20.txt,2958.0,False,7596,10.214573383331299,7.4284,6.947053100012454,['h_1mach_preemptive']
+ta20.txt,12472.0,False,2860,10.765993118286133,7.5614,7.326460799998472,['h_simplified_shifting_bottleneck']
+ta41.txt,25114.0,False,914,11.659857511520386,7.7563,7.5661827000024005,"[1.88, 'h_job_based', 'MULTIPLY']"

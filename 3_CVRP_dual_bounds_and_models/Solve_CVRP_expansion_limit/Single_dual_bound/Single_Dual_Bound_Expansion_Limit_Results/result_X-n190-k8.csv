@@ -1,0 +1,2 @@
+Instance,Status,Cost,Time (s),Expanded,Generated,Is Optimal
+X-n190-k8.vrp,success,19553.12979232301,900.0083277225494,285433,1654797,False

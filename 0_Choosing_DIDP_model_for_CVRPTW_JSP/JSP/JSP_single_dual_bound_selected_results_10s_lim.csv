@@ -1,0 +1,11 @@
+Instance,Best Known Cost,Cost,Gap to BKC,Nodes Expanded,Nodes Generated,Running Time (s),Is Optimal,Infeasibility
+abz5.txt,1234.0,1401.0,13.53%,29493,57179,10.013833045959473,False (Time Limit),False
+ft06.txt,55.0,55.0,0.00%,67401,85986,10.014655828475952,False (Time Limit),False
+ft10.txt,930.0,1165.0,25.27%,27922,55688,10.017784357070923,False (Time Limit),False
+la07.txt,890.0,978.0,9.89%,25894,36244,10.01271677017212,False (Time Limit),False
+la21.txt,1046.0,1347.0,28.78%,13039,29857,10.027817249298096,False (Time Limit),False
+la26.txt,1218.0,1624.0,33.33%,7137,15405,10.030521392822266,False (Time Limit),False
+ta01.txt,1231.0,1947.0,58.16%,9230,20984,10.143652439117432,False (Time Limit),False
+ft20.txt,1165.0,1533.0,31.59%,17202,29044,10.02506399154663,False (Time Limit),False
+ta20.txt,1318.0,2084.0,58.12%,6176,16241,10.08631157875061,False (Time Limit),False
+ta41.txt,1859.0,3279.0,76.39%,2058,6792,10.171280145645142,False (Time Limit),False

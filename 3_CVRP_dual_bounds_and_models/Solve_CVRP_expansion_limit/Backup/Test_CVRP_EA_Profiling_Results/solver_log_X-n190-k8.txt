@@ -1,0 +1,10 @@
+Solver: CustomDualBoundCABSv1 from DIDPPy v0.7.2-a
+Searched with beam size: 1, expanded: 190, elapsed time: 3.4662046
+New primal bound: 19989.991220372176, expanded: 190, elapsed time: 3.4662521
+Searched with beam size: 2, expanded: 472, elapsed time: 10.0019087
+Reached time limit.
+{"status": "success", "history": [[190, 19989.991220372176], [472, 19989.991220372176]], "duration": 10.057163953781128}
+
+
+=== STDERR ===
+DEBUG: Loaded X-n190-k8.vrp | Nodes: 190, Capacity: 138, Vehicles: 8, Total Demand: 1043

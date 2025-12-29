@@ -1,0 +1,31 @@
+Instance: X-n190-k8.vrp
+========================================
+
+Solver: CABS from DIDPPy v0.7.2-a
+Searched with beam size: 1, expanded: 190, elapsed time: 0.8676037
+New dual bound: 4115.494522841529, expanded: 190, elapsed time: 0.867658
+New primal bound: 20025.79593096923, expanded: 190, elapsed time: 0.8676658
+Searched with beam size: 2, expanded: 568, elapsed time: 2.1040425
+New dual bound: 4141.99385215897, expanded: 568, elapsed time: 2.1040743
+Searched with beam size: 4, expanded: 1325, elapsed time: 4.5837321
+New dual bound: 4155.255456027907, expanded: 1325, elapsed time: 4.5837636
+New primal bound: 19863.47084115016, expanded: 1325, elapsed time: 4.5840455
+Searched with beam size: 8, expanded: 2825, elapsed time: 9.5148697
+New dual bound: 4165.122237919682, expanded: 2825, elapsed time: 9.5148979
+Searched with beam size: 16, expanded: 5842, elapsed time: 18.0943825
+New dual bound: 4174.293667923225, expanded: 5842, elapsed time: 18.0944338
+Searched with beam size: 32, expanded: 11869, elapsed time: 38.791679
+New dual bound: 4178.324890620865, expanded: 11869, elapsed time: 38.7917098
+New primal bound: 19553.12979232301, expanded: 11869, elapsed time: 38.7920283
+Searched with beam size: 64, expanded: 23889, elapsed time: 70.6388257
+New dual bound: 4183.313824948475, expanded: 23889, elapsed time: 70.6388571
+Searched with beam size: 128, expanded: 47978, elapsed time: 140.9144013
+New dual bound: 4191.868812184709, expanded: 47978, elapsed time: 140.9144395
+Searched with beam size: 256, expanded: 95672, elapsed time: 268.1652563
+New dual bound: 4198.253513810099, expanded: 95672, elapsed time: 268.1652936
+Searched with beam size: 512, expanded: 190548, elapsed time: 507.5952754
+New dual bound: 4205.118962678386, expanded: 190548, elapsed time: 507.5953124
+Searched with beam size: 1024, expanded: 285433, elapsed time: 900.0051565
+Reached time limit.
+
+{"status": "success", "cost": 19553.12979232301, "expanded": 285433, "generated": 1654797, "duration": 900.0083277225494, "is_optimal": false}

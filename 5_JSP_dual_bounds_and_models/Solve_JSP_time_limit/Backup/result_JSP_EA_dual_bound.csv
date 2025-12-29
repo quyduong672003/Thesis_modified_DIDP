@@ -1,0 +1,11 @@
+Instance,Total_Time_(s),Best_Fitness,Best_Chromosome,Log_File
+abz5.txt,1520.89,3.260940032414911,"['h_1mach_preemptive', 'h_1mach_non_preemptive', 5.84, 'h_simplified_shifting_bottleneck', 'MULTIPLY', 'MAX', 8.5, 'h_job_based', 'MULTIPLY', 'h_machine_based', 'h_lp_relaxation', 'MAX', 'MAX', 'PDIV', 'MAX']",JSP_EA_batch_logs\abz5_log.txt
+ft06.txt,1555.49,0.45454545454545453,['h_job_based'],JSP_EA_batch_logs\ft06_log.txt
+ft10.txt,1501.9,1.9655913978494624,"['h_1mach_preemptive', 4.61, 'h_job_based', 'MULTIPLY', 'PDIV']",JSP_EA_batch_logs\ft10_log.txt
+la07.txt,1639.22,1.4640449438202248,"[0.08, 'h_simplified_shifting_bottleneck', 'MULTIPLY']",JSP_EA_batch_logs\la07_log.txt
+la21.txt,1576.51,4.472275334608031,['h_job_based'],JSP_EA_batch_logs\la21_log.txt
+la26.txt,1747.12,5.486863711001642,['h_1mach_preemptive'],JSP_EA_batch_logs\la26_log.txt
+ta01.txt,1602.74,6.3696181965881395,"[7.55, 'h_job_based', 'MULTIPLY', 'h_job_based', 'PDIV']",JSP_EA_batch_logs\ta01_log.txt
+ft20.txt,1545.79,1.5390557939914162,['h_1mach_preemptive'],JSP_EA_batch_logs\ft20_log.txt
+ta20.txt,1715.54,8.462822458270105,['h_simplified_shifting_bottleneck'],JSP_EA_batch_logs\ta20_log.txt
+ta41.txt,1978.14,12.509413663259817,"[1.88, 'h_job_based', 'MULTIPLY']",JSP_EA_batch_logs\ta41_log.txt

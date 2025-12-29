@@ -1,0 +1,37 @@
+Solver: CustomDualBoundCABSv1 from DIDPPy v0.7.2-a
+Searched with beam size: 1, expanded: 300, elapsed time: 0.7415716
+New primal bound: 12789, expanded: 300, elapsed time: 0.7416993
+Searched with beam size: 2, expanded: 899, elapsed time: 2.2504635
+Searched with beam size: 4, expanded: 2093, elapsed time: 5.1963819
+New primal bound: 12472, expanded: 2093, elapsed time: 5.1987622
+Searched with beam size: 8, expanded: 3269, elapsed time: 10.0001027
+Reached time limit.
+
+============================================================
+                    📋 SOLVER RUN REPORT                     
+============================================================
+🎯 SOLUTION STATUS:
+   • Cost:              12472.0
+   • Status:            ⚠️  Suboptimal / Timeout
+   • Nodes Generated:   3,281
+   • Nodes Expanded:    3,269
+   • Branching Factor:  ~1.00
+------------------------------------------------------------
+⏱️  TIME DISTRIBUTION (Total: 10.0828s):
+   [Pure CABS time:  26.2%] 🆚 [Bridge time:  73.8%]
+
+   1. 🟢 Pure CABS (Search):    2.6432 s
+      └─ Average time per expanded state:   0.8086 ms
+   2. 🔴 Total Bridge Time:     7.4396 s
+      ├─ 🐍 Dual Bound Calculation Time: :     7.1999 s  ( 96.8% of bridge time)
+      └─ 🌉 Switching Time:  0.2397 s  (  3.2% of bridge time)
+------------------------------------------------------------
+📊 PYTHON DUAL BOUND CALL STATS:
+   • Total Calls:       40,434
+   • Avg Bridge Time:   0.1840 ms
+   • Avg Pure Calc:     0.1781 ms
+   • Avg Switching:     0.0059 ms
+   • Throughput:        4,010 calls/sec
+============================================================
+
+{"status": "success", "cost": 12472.0, "is_optimal": false, "generated": 3281, "expanded": 3269, "duration": 10.662841558456421, "stats": {"total_duration": 10.082777261734009, "total_bridge_time": 7.4396, "pure_cabs_time": 2.6431772617340084, "switching_overhead": 0.23971639848817183, "python_dual_bound_calc_time": 7.199883601511829, "total_calls": 40434}}

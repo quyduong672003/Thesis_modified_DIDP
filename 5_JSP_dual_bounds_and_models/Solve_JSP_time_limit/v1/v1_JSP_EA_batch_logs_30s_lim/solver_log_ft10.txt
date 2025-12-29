@@ -1,0 +1,39 @@
+Solver: CustomDualBoundCABSv1 from DIDPPy v0.7.2-a
+Searched with beam size: 1, expanded: 100, elapsed time: 0.9692186
+New primal bound: 3394, expanded: 100, elapsed time: 0.9692953
+Searched with beam size: 2, expanded: 299, elapsed time: 2.9651211
+New primal bound: 3222, expanded: 299, elapsed time: 2.9656903
+Searched with beam size: 4, expanded: 693, elapsed time: 6.9330212
+Searched with beam size: 8, expanded: 1465, elapsed time: 14.9210042
+New primal bound: 3020, expanded: 1465, elapsed time: 14.9215999
+Searched with beam size: 16, expanded: 2846, elapsed time: 30.0072292
+Reached time limit.
+
+============================================================
+                    📋 SOLVER RUN REPORT                     
+============================================================
+🎯 SOLUTION STATUS:
+   • Cost:              3020.0
+   • Status:            ⚠️  Suboptimal / Timeout
+   • Nodes Generated:   2,869
+   • Nodes Expanded:    2,846
+   • Branching Factor:  ~1.01
+------------------------------------------------------------
+⏱️  TIME DISTRIBUTION (Total: 30.0160s):
+   [Pure CABS time:   3.2%] 🆚 [Bridge time:  96.8%]
+
+   1. 🟢 Pure CABS (Search):    0.9513 s
+      └─ Average time per expanded state:   0.3343 ms
+   2. 🔴 Total Bridge Time:     29.0647 s
+      ├─ 🐍 Dual Bound Calculation Time: :     28.9127 s  ( 99.5% of bridge time)
+      └─ 🌉 Switching Time:  0.1520 s  (  0.5% of bridge time)
+------------------------------------------------------------
+📊 PYTHON DUAL BOUND CALL STATS:
+   • Total Calls:       16,947
+   • Avg Bridge Time:   1.7150 ms
+   • Avg Pure Calc:     1.7061 ms
+   • Avg Switching:     0.0090 ms
+   • Throughput:        565 calls/sec
+============================================================
+
+{"status": "success", "cost": 3020.0, "is_optimal": false, "generated": 2869, "expanded": 2846, "duration": 30.16384506225586, "stats": {"total_duration": 30.01604461669922, "total_bridge_time": 29.0647, "pure_cabs_time": 0.9513446166992203, "switching_overhead": 0.15200170110356837, "python_dual_bound_calc_time": 28.91269829889643, "total_calls": 16947}}

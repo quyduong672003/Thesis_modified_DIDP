@@ -1,0 +1,37 @@
+--- Initialization: Generating Population of size 15 - 10 generations - solver limit at 10 seconds ---
+Generating Initial Population at time: Thu Dec 25 22:29:55 2025
+-> Seeding: 1 Random Terminal + 1 Simple Subtree
+Initial Population Generated at time: Thu Dec 25 22:53:46 2025
+Initialization time 1430.9153144359589
+Initial Best Fitness: 0.04854873306490556
+Gen 1: Best Fitness = 0.04854873306490556 | Global Best = 0.04854873306490556
+Gen 2: Best Fitness = 0.04854873306490556 | Global Best = 0.04854873306490556
+Gen 3: Best Fitness = 0.04854873306490556 | Global Best = 0.04854873306490556
+Subtree crossover produced invalid offspring: Invalid Chromosome: No heuristics found (Pure Constant).
+Using fallback parent chromosome for this subtree crossover.
+Gen 4: Best Fitness = 0.04854873306490556 | Global Best = 0.04854873306490556
+Gen 5: Best Fitness = 0.04854873306490556 | Global Best = 0.04854873306490556
+Uniform crossover produced invalid offspring: Invalid Chromosome: No heuristics found (Pure Constant).
+Using fallback parent chromosome for this uniform crossover.
+Gen 6: Best Fitness = 0.04854873306490556 | Global Best = 0.04854873306490556
+Uniform crossover produced invalid offspring: Invalid Chromosome: No heuristics found (Pure Constant).
+Using fallback parent chromosome for this uniform crossover.
+Gen 7: Best Fitness = 0.04854873306490556 | Global Best = 0.04854873306490556
+Subtree crossover produced invalid offspring: Invalid Chromosome: No heuristics found (Pure Constant).
+Using fallback parent chromosome for this subtree crossover.
+Gen 8: Best Fitness = 0.04854873306490556 | Global Best = 0.04854873306490556
+Gen 9: Best Fitness = 0.04854873306490556 | Global Best = 0.04854873306490556
+Gen 10: Best Fitness = 0.04854873306490556 | Global Best = 0.04854873306490556
+
+========================================
+      PERFORMANCE PROFILING REPORT      
+========================================
+Total Runtime:    13563.1878 seconds
+========================================
+--- Evolution Completed ---
+
+
+========================================
+FINAL BEST INDIVIDUAL
+========================================
+{'chromosome': [6.37, 'h_mst', 'MULTIPLY'], 'fitness': 0.04854873306490556}

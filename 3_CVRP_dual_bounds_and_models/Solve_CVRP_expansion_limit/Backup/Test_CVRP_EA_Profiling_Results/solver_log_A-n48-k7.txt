@@ -1,0 +1,17 @@
+Solver: CustomDualBoundCABSv1 from DIDPPy v0.7.2-a
+Searched with beam size: 1, expanded: 48, elapsed time: 0.1185841
+New primal bound: 1461.3897926044917, expanded: 48, elapsed time: 0.118634
+Searched with beam size: 2, expanded: 143, elapsed time: 0.3491507
+New primal bound: 1363.369217054254, expanded: 143, elapsed time: 0.3492627
+Searched with beam size: 4, expanded: 332, elapsed time: 0.8045361
+Searched with beam size: 8, expanded: 708, elapsed time: 1.7209297000000001
+Searched with beam size: 16, expanded: 1455, elapsed time: 3.416755
+New primal bound: 1261.8342268655895, expanded: 1455, elapsed time: 3.4168692
+Searched with beam size: 32, expanded: 2947, elapsed time: 6.7089731
+Searched with beam size: 64, expanded: 3714, elapsed time: 10.0013281
+Reached time limit.
+{"status": "success", "history": [[48, 1461.3897926044917], [143, 1363.369217054254], [1455, 1261.8342268655895], [3714, 1261.8342268655895]], "duration": 10.115741968154907}
+
+
+=== STDERR ===
+DEBUG: Loaded A-n48-k7.vrp | Nodes: 48, Capacity: 100, Vehicles: 7, Total Demand: 626

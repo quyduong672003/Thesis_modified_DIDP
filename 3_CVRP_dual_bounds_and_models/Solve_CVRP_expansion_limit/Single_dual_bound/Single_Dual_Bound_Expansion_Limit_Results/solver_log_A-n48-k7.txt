@@ -1,0 +1,50 @@
+Instance: A-n48-k7.vrp
+========================================
+
+Solver: CABS from DIDPPy v0.7.2-a
+Searched with beam size: 1, expanded: 48, elapsed time: 0.0174384
+New dual bound: 399.41172588430305, expanded: 48, elapsed time: 0.0175086
+New primal bound: 1423.5296439013823, expanded: 48, elapsed time: 0.0175257
+Searched with beam size: 2, expanded: 143, elapsed time: 0.0491355
+New dual bound: 399.7362812046398, expanded: 143, elapsed time: 0.0491751
+New primal bound: 1348.1703080858465, expanded: 143, elapsed time: 0.0492667
+Searched with beam size: 4, expanded: 330, elapsed time: 0.1094094
+New dual bound: 400.7476130331683, expanded: 330, elapsed time: 0.109434
+New primal bound: 1329.5461979326406, expanded: 330, elapsed time: 0.1095111
+Searched with beam size: 8, expanded: 693, elapsed time: 0.2305003
+New dual bound: 408.67949814797316, expanded: 693, elapsed time: 0.2305305
+Searched with beam size: 16, expanded: 1439, elapsed time: 0.4697374
+New dual bound: 412.4603784129438, expanded: 1439, elapsed time: 0.4697621
+New primal bound: 1326.9430907676071, expanded: 1439, elapsed time: 0.4698352
+Searched with beam size: 32, expanded: 2930, elapsed time: 1.0254606
+New dual bound: 415.02238767414264, expanded: 2930, elapsed time: 1.0254879
+New primal bound: 1298.9510915097883, expanded: 2930, elapsed time: 1.0255664
+Searched with beam size: 64, expanded: 5840, elapsed time: 1.9518847
+New dual bound: 417.30026970430134, expanded: 5840, elapsed time: 1.9519123
+New primal bound: 1297.0296844243276, expanded: 5840, elapsed time: 1.951984
+Searched with beam size: 128, expanded: 11599, elapsed time: 3.8393289
+New dual bound: 420.06008759146874, expanded: 11599, elapsed time: 3.8393673
+New primal bound: 1228.8057931262213, expanded: 11599, elapsed time: 3.8394481000000003
+Searched with beam size: 256, expanded: 23016, elapsed time: 7.4906339
+New dual bound: 423.10229642282735, expanded: 23016, elapsed time: 7.4906627
+New primal bound: 1190.437045410361, expanded: 23016, elapsed time: 7.4907371
+Searched with beam size: 512, expanded: 45364, elapsed time: 14.5431518
+New dual bound: 426.9277732698755, expanded: 45364, elapsed time: 14.543179
+Searched with beam size: 1024, expanded: 89895, elapsed time: 28.8417494
+New dual bound: 430.4719083252668, expanded: 89895, elapsed time: 28.8417787
+New primal bound: 1162.327810327296, expanded: 89895, elapsed time: 28.8418663
+Searched with beam size: 2048, expanded: 178824, elapsed time: 57.371929
+New dual bound: 434.0226077905484, expanded: 178824, elapsed time: 57.3719575
+New primal bound: 1159.4783339979772, expanded: 178824, elapsed time: 57.3720316
+Searched with beam size: 4096, expanded: 354668, elapsed time: 113.3766113
+New dual bound: 437.50716318263346, expanded: 354668, elapsed time: 113.3766443
+Searched with beam size: 8192, expanded: 704136, elapsed time: 225.2168673
+New dual bound: 440.9964854528588, expanded: 704136, elapsed time: 225.2168957
+New primal bound: 1155.5043465931246, expanded: 704136, elapsed time: 225.2170024
+Searched with beam size: 16384, expanded: 1401254, elapsed time: 452.4564593
+New dual bound: 444.3410915259282, expanded: 1401254, elapsed time: 452.4565137
+New primal bound: 1150.2588516046962, expanded: 1401254, elapsed time: 452.4566385
+Searched with beam size: 32768, expanded: 2572041, elapsed time: 900.205094
+Reached time limit.
+
+{"status": "success", "cost": 1150.2588516046962, "expanded": 2572041, "generated": 11038438, "duration": 900.2077233791351, "is_optimal": false}

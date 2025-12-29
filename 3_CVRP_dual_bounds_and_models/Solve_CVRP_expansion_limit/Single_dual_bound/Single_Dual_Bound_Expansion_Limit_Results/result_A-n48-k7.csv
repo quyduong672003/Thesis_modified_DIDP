@@ -1,0 +1,2 @@
+Instance,Status,Cost,Time (s),Expanded,Generated,Is Optimal
+A-n48-k7.vrp,success,1150.2588516046962,900.2077233791351,2572041,11038438,False

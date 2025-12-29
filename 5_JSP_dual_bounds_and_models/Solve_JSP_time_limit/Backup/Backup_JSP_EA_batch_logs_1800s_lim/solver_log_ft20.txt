@@ -1,0 +1,40 @@
+Solver: CustomDualBoundCABSv1 from DIDPPy v0.7.2-a
+Searched with beam size: 1, expanded: 100, elapsed time: 0.1032076
+New primal bound: 3218, expanded: 100, elapsed time: 0.1033252
+Searched with beam size: 2, expanded: 299, elapsed time: 0.3102379
+Searched with beam size: 4, expanded: 696, elapsed time: 0.7232044
+Searched with beam size: 8, expanded: 1488, elapsed time: 1.5458395
+Searched with beam size: 16, expanded: 3060, elapsed time: 3.1757706
+New primal bound: 2958, expanded: 3060, elapsed time: 3.1761706
+Searched with beam size: 32, expanded: 6213, elapsed time: 6.412435
+Searched with beam size: 64, expanded: 8089, elapsed time: 10.0001685
+Reached time limit.
+
+============================================================
+                    📋 SOLVER RUN REPORT                     
+============================================================
+🎯 SOLUTION STATUS:
+   • Cost:              2958.0
+   • Status:            ⚠️  Suboptimal / Timeout
+   • Nodes Generated:   8,184
+   • Nodes Expanded:    8,089
+   • Branching Factor:  ~1.01
+------------------------------------------------------------
+⏱️  TIME DISTRIBUTION (Total: 10.1117s):
+   [Pure CABS time:  27.3%] 🆚 [Bridge time:  72.7%]
+
+   1. 🟢 Pure CABS (Search):    2.7559 s
+      └─ Average time per expanded state:   0.3407 ms
+   2. 🔴 Total Bridge Time:     7.3558 s
+      ├─ 🐍 Dual Bound Calculation Time: :     6.8526 s  ( 93.2% of bridge time)
+      └─ 🌉 Switching Time:  0.5032 s  (  6.8% of bridge time)
+------------------------------------------------------------
+📊 PYTHON DUAL BOUND CALL STATS:
+   • Total Calls:       99,920
+   • Avg Bridge Time:   0.0736 ms
+   • Avg Pure Calc:     0.0686 ms
+   • Avg Switching:     0.0050 ms
+   • Throughput:        9,882 calls/sec
+============================================================
+
+{"status": "success", "cost": 2958.0, "is_optimal": false, "generated": 8184, "expanded": 8089, "duration": 10.212756633758545, "stats": {"total_duration": 10.111698865890503, "total_bridge_time": 7.3558, "pure_cabs_time": 2.7558988658905026, "switching_overhead": 0.503224697002862, "python_dual_bound_calc_time": 6.852575302997138, "total_calls": 99920}}

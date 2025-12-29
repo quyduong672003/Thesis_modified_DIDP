@@ -1,0 +1,9 @@
+Instance: 91.txt
+Chromosome: [0.06, 'h_eigen', 'MULTIPLY']
+========================================
+
+
+
+=== STDERR ===
+
+[Guard] Memory limit (8000MB) reached.

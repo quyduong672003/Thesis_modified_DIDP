@@ -1,0 +1,4 @@
+Solver: CustomDualBoundCABSv1 from DIDPPy v0.7.2-a
+Searched with beam size: 1, expanded: 332, elapsed time: 30.0654071
+Reached time limit.
+{"status": "success", "cost": Infinity, "is_optimal": false, "generated": 1146, "expanded": 332, "duration": 31.527189254760742, "stats": {"total_duration": 30.07174563407898, "total_bridge_time": 28.807, "pure_cabs_time": 1.2647456340789809, "switching_overhead": 0.12877949941251288, "python_dual_bound_calc_time": 28.678220500587486, "total_calls": 7831}}

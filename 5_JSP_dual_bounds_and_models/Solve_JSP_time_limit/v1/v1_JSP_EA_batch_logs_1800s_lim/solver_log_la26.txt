@@ -1,0 +1,19 @@
+Solver: CustomDualBoundCABSv1 from DIDPPy v0.7.2-a
+Searched with beam size: 1, expanded: 200, elapsed time: 3.5553988
+New primal bound: 8608, expanded: 200, elapsed time: 3.5555087
+Searched with beam size: 2, expanded: 599, elapsed time: 10.6254454
+Searched with beam size: 4, expanded: 1393, elapsed time: 24.8403384
+New primal bound: 8236, expanded: 1393, elapsed time: 24.8415449
+Searched with beam size: 8, expanded: 2974, elapsed time: 53.5281966
+New primal bound: 7901, expanded: 2974, elapsed time: 53.5294093
+Searched with beam size: 16, expanded: 6144, elapsed time: 111.480365
+New primal bound: 7874, expanded: 6144, elapsed time: 111.4817663
+Searched with beam size: 32, expanded: 12445, elapsed time: 228.7372519
+New primal bound: 7799, expanded: 12445, elapsed time: 228.738645
+Searched with beam size: 64, expanded: 25020, elapsed time: 477.8620651
+New primal bound: 7742, expanded: 25020, elapsed time: 477.8635456
+Searched with beam size: 128, expanded: 50050, elapsed time: 1052.5019842
+New primal bound: 7243, expanded: 50050, elapsed time: 1052.5040422
+Searched with beam size: 256, expanded: 79095, elapsed time: 1801.9934609
+Reached time limit.
+memory allocation of 7833376 bytes failed
