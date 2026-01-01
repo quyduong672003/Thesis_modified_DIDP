@@ -1,0 +1,34 @@
+Instance: ft06.txt
+========================================
+
+Solver: CABS from DIDPPy v0.7.2-a
+Searched with beam size: 1, expanded: 36, elapsed time: 0.0042158
+New dual bound: 43, expanded: 36, elapsed time: 0.0043122
+New primal bound: 87, expanded: 36, elapsed time: 0.0043222
+Searched with beam size: 2, expanded: 107, elapsed time: 0.0101983
+Searched with beam size: 4, expanded: 247, elapsed time: 0.0219026
+New primal bound: 72, expanded: 247, elapsed time: 0.0220748
+Searched with beam size: 8, expanded: 522, elapsed time: 0.0431122
+New primal bound: 71, expanded: 522, elapsed time: 0.0432556
+Searched with beam size: 16, expanded: 1035, elapsed time: 0.0858663
+Searched with beam size: 32, expanded: 2123, elapsed time: 0.1757904
+New primal bound: 62, expanded: 2123, elapsed time: 0.1759611
+Searched with beam size: 64, expanded: 4191, elapsed time: 0.3507901
+New primal bound: 60, expanded: 4191, elapsed time: 0.3509759
+Searched with beam size: 128, expanded: 8335, elapsed time: 0.7021961
+New primal bound: 55, expanded: 8335, elapsed time: 0.7023738
+Searched with beam size: 256, expanded: 13452, elapsed time: 1.2066849
+Searched with beam size: 512, expanded: 21430, elapsed time: 2.074017
+Searched with beam size: 1024, expanded: 37833, elapsed time: 3.9649294
+Searched with beam size: 2048, expanded: 69875, elapsed time: 8.3589875
+Searched with beam size: 4096, expanded: 132055, elapsed time: 18.7541991
+New dual bound: 45, expanded: 132055, elapsed time: 18.7542965
+Searched with beam size: 8192, expanded: 248221, elapsed time: 42.5885838
+New dual bound: 49, expanded: 248221, elapsed time: 42.5886234
+Searched with beam size: 16384, expanded: 452349, elapsed time: 89.0912487
+New dual bound: 52, expanded: 452349, elapsed time: 89.0912852
+Searched with beam size: 32768, expanded: 764459, elapsed time: 164.713059
+New dual bound: 54, expanded: 764459, elapsed time: 164.713165
+Searched with beam size: 65536, expanded: 1081177, elapsed time: 243.1846933
+
+{"status": "success", "cost": 55.0, "expanded": 1081177, "generated": 1151448, "duration": 243.18263912200928, "is_optimal": true, "history": []}

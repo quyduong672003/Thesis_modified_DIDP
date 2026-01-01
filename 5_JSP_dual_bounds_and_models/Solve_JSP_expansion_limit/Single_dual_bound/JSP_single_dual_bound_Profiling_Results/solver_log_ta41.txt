@@ -1,0 +1,22 @@
+Instance: ta41.txt
+========================================
+
+Solver: CABS from DIDPPy v0.7.2-a
+Searched with beam size: 1, expanded: 600, elapsed time: 1.9478843000000001
+New dual bound: 1830, expanded: 600, elapsed time: 1.9479361
+New primal bound: 3376, expanded: 600, elapsed time: 1.9479418
+Searched with beam size: 2, expanded: 1799, elapsed time: 5.748635
+New primal bound: 3279, expanded: 1799, elapsed time: 5.7556734
+Searched with beam size: 4, expanded: 4195, elapsed time: 13.2409664
+New primal bound: 3275, expanded: 4195, elapsed time: 13.2490655
+Searched with beam size: 8, expanded: 8969, elapsed time: 28.4226522
+Searched with beam size: 16, expanded: 18539, elapsed time: 58.8477112
+New primal bound: 3239, expanded: 18539, elapsed time: 58.8551369
+Searched with beam size: 32, expanded: 37697, elapsed time: 121.2867064
+New primal bound: 3084, expanded: 37697, elapsed time: 121.2935315
+Searched with beam size: 64, expanded: 75766, elapsed time: 264.4909545
+Searched with beam size: 128, expanded: 151784, elapsed time: 577.6791344
+Searched with beam size: 256, expanded: 220428, elapsed time: 900.003705
+Reached time limit.
+
+{"status": "success", "cost": 3084.0, "expanded": 220428, "generated": 601469, "duration": 900.1245946884155, "is_optimal": false, "history": []}

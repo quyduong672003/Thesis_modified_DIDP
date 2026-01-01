@@ -1,0 +1,26 @@
+Instance: ta20.txt
+========================================
+
+Solver: CABS from DIDPPy v0.7.2-a
+Searched with beam size: 1, expanded: 300, elapsed time: 0.337706
+New dual bound: 1186, expanded: 300, elapsed time: 0.3377592
+New primal bound: 2107, expanded: 300, elapsed time: 0.3377653
+Searched with beam size: 2, expanded: 896, elapsed time: 1.0149956
+Searched with beam size: 4, expanded: 2090, elapsed time: 2.331621
+New primal bound: 2091, expanded: 2090, elapsed time: 2.3341683
+Searched with beam size: 8, expanded: 4483, elapsed time: 4.937512
+New primal bound: 2084, expanded: 4483, elapsed time: 4.9405435
+Searched with beam size: 16, expanded: 9237, elapsed time: 10.2502958
+Searched with beam size: 32, expanded: 18790, elapsed time: 21.1857372
+New primal bound: 2034, expanded: 18790, elapsed time: 21.1882985
+Searched with beam size: 64, expanded: 36543, elapsed time: 45.7343164
+Searched with beam size: 128, expanded: 74628, elapsed time: 96.5839688
+New primal bound: 1917, expanded: 74628, elapsed time: 96.5868618
+Searched with beam size: 256, expanded: 150609, elapsed time: 191.0125734
+New primal bound: 1745, expanded: 150609, elapsed time: 191.0150666
+Searched with beam size: 512, expanded: 269430, elapsed time: 351.9817231
+Searched with beam size: 1024, expanded: 563133, elapsed time: 716.2592148
+Searched with beam size: 2048, expanded: 690737, elapsed time: 900.0093184
+Reached time limit.
+
+{"status": "success", "cost": 1745.0, "expanded": 690737, "generated": 1433939, "duration": 900.0647435188293, "is_optimal": false, "history": []}

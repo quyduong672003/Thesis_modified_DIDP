@@ -1,0 +1,29 @@
+Instance: ft10.txt
+========================================
+
+Solver: CABS from DIDPPy v0.7.2-a
+Searched with beam size: 1, expanded: 100, elapsed time: 0.0262728
+New dual bound: 631, expanded: 100, elapsed time: 0.0263161
+New primal bound: 1329, expanded: 100, elapsed time: 0.0263218
+Searched with beam size: 2, expanded: 299, elapsed time: 0.0744091
+Searched with beam size: 4, expanded: 696, elapsed time: 0.1715574
+New primal bound: 1291, expanded: 696, elapsed time: 0.1721201
+Searched with beam size: 8, expanded: 1489, elapsed time: 0.3654788
+New primal bound: 1260, expanded: 1489, elapsed time: 0.366074
+Searched with beam size: 16, expanded: 2983, elapsed time: 0.7530579
+Searched with beam size: 32, expanded: 6127, elapsed time: 1.5253249
+New primal bound: 1165, expanded: 6127, elapsed time: 1.5258479999999999
+Searched with beam size: 64, expanded: 12195, elapsed time: 3.1020892
+Searched with beam size: 128, expanded: 21899, elapsed time: 6.0432834
+Searched with beam size: 256, expanded: 46654, elapsed time: 12.6795027
+New primal bound: 1130, expanded: 46654, elapsed time: 12.6801933
+Searched with beam size: 512, expanded: 95549, elapsed time: 26.2710369
+New primal bound: 1083, expanded: 95549, elapsed time: 26.2716522
+Searched with beam size: 1024, expanded: 170177, elapsed time: 49.2185404
+Searched with beam size: 2048, expanded: 328583, elapsed time: 103.7643656
+Searched with beam size: 4096, expanded: 646674, elapsed time: 219.8456127
+Searched with beam size: 8192, expanded: 1391029, elapsed time: 497.9689107
+Searched with beam size: 16384, expanded: 2260367, elapsed time: 900.0470424
+Reached time limit.
+
+{"status": "success", "cost": 1083.0, "expanded": 2260367, "generated": 4644678, "duration": 900.0594477653503, "is_optimal": false, "history": []}

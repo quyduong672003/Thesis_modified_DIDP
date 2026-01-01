@@ -1,0 +1,29 @@
+Instance: R104.txt
+========================================
+
+Solver: CABS from DIDPPy v0.7.2-a
+Searched with beam size: 1, expanded: 220, elapsed time: 0.1442803
+New dual bound: 518.3511021326752, expanded: 220, elapsed time: 0.1443201
+New primal bound: 1969.9775361370905, expanded: 220, elapsed time: 0.1443265
+Searched with beam size: 2, expanded: 661, elapsed time: 0.4114218
+Searched with beam size: 4, expanded: 1538, elapsed time: 0.9382823
+New primal bound: 1924.6749513237078, expanded: 1538, elapsed time: 0.9389037
+Searched with beam size: 8, expanded: 3283, elapsed time: 2.0281171
+New primal bound: 1740.4463492736313, expanded: 3283, elapsed time: 2.0285843
+Searched with beam size: 16, expanded: 6772, elapsed time: 4.1618003
+New primal bound: 1717.2380259138797, expanded: 6772, elapsed time: 4.1622975
+Searched with beam size: 32, expanded: 13685, elapsed time: 8.5490616
+New primal bound: 1475.9943759256962, expanded: 13685, elapsed time: 8.549599
+Searched with beam size: 64, expanded: 27572, elapsed time: 17.1885903
+New primal bound: 1448.619404611789, expanded: 27572, elapsed time: 17.189099
+Searched with beam size: 128, expanded: 54681, elapsed time: 34.4017681
+New dual bound: 522.8232380876746, expanded: 54681, elapsed time: 34.4017942
+Searched with beam size: 256, expanded: 109566, elapsed time: 69.4147103
+Searched with beam size: 512, expanded: 220259, elapsed time: 139.3365789
+Searched with beam size: 1024, expanded: 439496, elapsed time: 283.1476274
+New primal bound: 1416.2935644361603, expanded: 439496, elapsed time: 283.1482932
+Searched with beam size: 2048, expanded: 875762, elapsed time: 567.301981
+Searched with beam size: 4096, expanded: 1140237, elapsed time: 900.0915193
+Reached time limit.
+
+{"status": "success", "cost": 1416.2935644361603, "expanded": 1140237, "generated": 6098277, "duration": 900.103253364563, "is_optimal": false, "history": []}
