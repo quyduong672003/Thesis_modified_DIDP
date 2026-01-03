@@ -1,0 +1,37 @@
+Solver: CustomDualBoundCABSv1 from DIDPPy v0.7.2-a
+Searched with beam size: 1, expanded: 217, elapsed time: 1.3498286
+New primal bound: 1561.5537685035442, expanded: 217, elapsed time: 1.3505274
+Searched with beam size: 2, expanded: 648, elapsed time: 3.6321623
+New primal bound: 1402.8201472843793, expanded: 648, elapsed time: 3.6327242
+Searched with beam size: 4, expanded: 1521, elapsed time: 8.6425567
+Searched with beam size: 8, expanded: 1624, elapsed time: 10.0023828
+Reached time limit.
+
+============================================================
+                    📋 SOLVER RUN REPORT                     
+============================================================
+🎯 SOLUTION STATUS:
+   • Cost:              1402.8201472843793
+   • Status:            ⚠️  Suboptimal / Timeout
+   • Nodes Generated:   4,585
+   • Nodes Expanded:    1,624
+   • Branching Factor:  ~2.82
+------------------------------------------------------------
+⏱️  TIME DISTRIBUTION (Total: 10.0720s):
+   [Pure CABS time:  12.4%] 🆚 [Bridge time:  87.6%]
+
+   1. 🟢 Pure CABS (Search):    1.2530 s
+      └─ Average time per expanded state:   0.7715 ms
+   2. 🔴 Total Bridge Time:     8.8190 s
+      ├─ 🐍 Dual Bound Calculation Time: :     8.4850 s  ( 96.2% of bridge time)
+      └─ 🌉 Switching Time:  0.3340 s  (  3.8% of bridge time)
+------------------------------------------------------------
+📊 PYTHON DUAL BOUND CALL STATS:
+   • Total Calls:       56,635
+   • Avg Bridge Time:   0.1557 ms
+   • Avg Pure Calc:     0.1498 ms
+   • Avg Switching:     0.0059 ms
+   • Throughput:        5,623 calls/sec
+============================================================
+
+{"status": "success", "cost": 1402.8201472843793, "is_optimal": false, "generated": 4585, "expanded": 1624, "duration": 14.74980640411377, "stats": {"total_duration": 10.071960926055908, "total_bridge_time": 8.819, "pure_cabs_time": 1.2529609260559074, "switching_overhead": 0.3339840002341088, "python_dual_bound_calc_time": 8.485015999765892, "total_calls": 56635}}

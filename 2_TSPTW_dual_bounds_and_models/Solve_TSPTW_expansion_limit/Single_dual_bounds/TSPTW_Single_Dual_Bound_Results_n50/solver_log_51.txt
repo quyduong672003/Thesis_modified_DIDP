@@ -1,0 +1,37 @@
+Instance: 51.txt
+========================================
+
+Solver: CABS from DIDPPy v0.7.2-a
+Searched with beam size: 1, expanded: 50, elapsed time: 0.0080143
+New dual bound: 413, expanded: 50, elapsed time: 0.0080505
+New primal bound: 1612, expanded: 50, elapsed time: 0.0080578
+Searched with beam size: 2, expanded: 146, elapsed time: 0.021545
+New dual bound: 424, expanded: 146, elapsed time: 0.0215688
+New primal bound: 1509, expanded: 146, elapsed time: 0.0216724
+Searched with beam size: 4, expanded: 341, elapsed time: 0.0494935
+New dual bound: 442, expanded: 341, elapsed time: 0.0495226
+New primal bound: 1425, expanded: 341, elapsed time: 0.0496174
+Searched with beam size: 8, expanded: 723, elapsed time: 0.1038523
+New dual bound: 498, expanded: 723, elapsed time: 0.1038786
+New primal bound: 1405, expanded: 723, elapsed time: 0.1039774
+Searched with beam size: 16, expanded: 1451, elapsed time: 0.214134
+New dual bound: 657, expanded: 1451, elapsed time: 0.2142038
+Searched with beam size: 32, expanded: 2802, elapsed time: 0.4267078
+New dual bound: 677, expanded: 2802, elapsed time: 0.4267499
+New primal bound: 1401, expanded: 2802, elapsed time: 0.426856
+Searched with beam size: 64, expanded: 5333, elapsed time: 0.8018911
+New dual bound: 705, expanded: 5333, elapsed time: 0.801931
+New primal bound: 1343, expanded: 5333, elapsed time: 0.8020364
+Searched with beam size: 128, expanded: 9881, elapsed time: 1.4268691
+New dual bound: 730, expanded: 9881, elapsed time: 1.4269097
+New primal bound: 1332, expanded: 9881, elapsed time: 1.4270078
+Searched with beam size: 256, expanded: 17604, elapsed time: 2.5796759
+New dual bound: 892, expanded: 17604, elapsed time: 2.5797036
+Searched with beam size: 512, expanded: 28732, elapsed time: 3.9154937
+New dual bound: 1039, expanded: 28732, elapsed time: 3.9155345
+New primal bound: 1311, expanded: 28732, elapsed time: 3.9157007999999998
+Searched with beam size: 1024, expanded: 43301, elapsed time: 5.5655704
+New dual bound: 1256, expanded: 43301, elapsed time: 5.5656058999999996
+Searched with beam size: 2048, expanded: 61022, elapsed time: 7.2515631
+
+{"status": "success", "cost": 1311.0, "expanded": 61022, "generated": 74360, "duration": 7.253308057785034, "is_optimal": true}

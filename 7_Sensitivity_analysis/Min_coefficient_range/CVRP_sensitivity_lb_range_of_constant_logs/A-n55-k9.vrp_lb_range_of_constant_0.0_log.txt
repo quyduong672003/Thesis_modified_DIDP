@@ -1,0 +1,1 @@
+Base case lb_range_of_constant=0.0. Skipped execution. Logged original fitness: 0.1064591607095857

@@ -1,0 +1,19 @@
+Instance: 90.txt
+========================================
+
+Solver: CABS from DIDPPy v0.7.2-a
+Searched with beam size: 1, expanded: 2, elapsed time: 0.0005449
+New dual bound: 228, expanded: 2, elapsed time: 0.0005977
+Searched with beam size: 2, expanded: 38, elapsed time: 0.0030982
+New dual bound: 259, expanded: 38, elapsed time: 0.0031426
+New primal bound: 780, expanded: 38, elapsed time: 0.0031491
+Searched with beam size: 4, expanded: 108, elapsed time: 0.007691
+New dual bound: 325, expanded: 108, elapsed time: 0.0077468
+New primal bound: 763, expanded: 108, elapsed time: 0.0078483
+Searched with beam size: 8, expanded: 216, elapsed time: 0.0179135
+New dual bound: 372, expanded: 216, elapsed time: 0.0180094
+Searched with beam size: 16, expanded: 360, elapsed time: 0.0287082
+New dual bound: 719, expanded: 360, elapsed time: 0.0287649
+Searched with beam size: 32, expanded: 516, elapsed time: 0.0406926
+
+{"status": "success", "cost": 763.0, "expanded": 516, "generated": 581, "duration": 0.041116952896118164, "is_optimal": true}

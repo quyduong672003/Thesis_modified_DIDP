@@ -1,0 +1,27 @@
+--- Initialization: Generating Population of size 15 - 9 generations - solver limit at 10 seconds ---
+Generating Initial Population at time: Fri Jan  2 19:39:53 2026
+-> Seeding: 1 Random Terminal + 1 Simple Subtree
+Initial Population Generated at time: Fri Jan  2 19:42:33 2026
+Initialization time 160.3938536643982
+Initial Best Fitness: 0.2350921352807339
+Gen 1: Best Fitness = 0.21339330513917548 | Global Best = 0.21339330513917548
+Gen 2: Best Fitness = 0.21339330513917548 | Global Best = 0.21339330513917548
+Gen 3: Best Fitness = 0.21339330513917548 | Global Best = 0.21339330513917548
+Gen 4: Best Fitness = 0.21339330513917548 | Global Best = 0.21339330513917548
+Subtree crossover produced invalid offspring: Invalid Chromosome: No heuristics found (Pure Constant).
+Using fallback parent chromosome for this subtree crossover.
+Gen 5: Best Fitness = 0.21339330513917548 | Global Best = 0.21339330513917548
+Subtree crossover produced invalid offspring: Invalid Chromosome: No heuristics found (Pure Constant).
+Using fallback parent chromosome for this subtree crossover.
+Gen 6: Best Fitness = 0.18767454653363902 | Global Best = 0.18767454653363902
+Gen 7: Best Fitness = 0.18767454653363902 | Global Best = 0.18767454653363902
+Gen 8: Best Fitness = 0.18767454653363902 | Global Best = 0.18767454653363902
+Gen 9: Best Fitness = 0.18767454653363902 | Global Best = 0.18767454653363902
+
+========================================
+      PERFORMANCE PROFILING REPORT      
+========================================
+Total Runtime:    1510.1125 seconds
+========================================
+--- Evolution Completed ---
+

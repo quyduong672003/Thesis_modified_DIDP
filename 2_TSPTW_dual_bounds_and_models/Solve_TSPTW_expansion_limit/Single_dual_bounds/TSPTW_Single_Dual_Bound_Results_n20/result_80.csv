@@ -1,0 +1,2 @@
+Instance,Status,Cost,Time (s),Expanded,Generated,Is Optimal
+80.txt,success,742.0,0.12272429466247559,2257,2764,True

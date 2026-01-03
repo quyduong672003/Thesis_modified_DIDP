@@ -1,0 +1,12 @@
+Instance number,Changed_parameter,Original_fitness,Sensitivity_fitness,percentage_of_change_of_parameter,percentage_of_change_of_fitness,absolute_percentage_of_change_of_fitness,sensitivity_chromosome
+A-n55-k9.vrp,10,0.106459161,0.106459161,-33.33%,0.00%,0.00%,['h_degree_average']
+A-n55-k9.vrp,11,0.106459161,0.165402165,-26.67%,55.37%,55.37%,"[5.54, 'h_1tree', 'MULTIPLY']"
+A-n55-k9.vrp,12,0.106459161,0.123266804,-20.00%,15.79%,15.79%,"[2.7, 'h_mst', 'MULTIPLY']"
+A-n55-k9.vrp,13,0.106459161,0.076785878,-13.33%,-27.87%,27.87%,"[2.58, 'h_mst', 'MULTIPLY']"
+A-n55-k9.vrp,14,0.106459161,0.102497969,-6.67%,-3.72%,3.72%,"[2.01, 'h_flow', 'MULTIPLY']"
+A-n55-k9.vrp,15,0.106459161,0.106459161,0.00%,0.00%,0.00%,
+A-n55-k9.vrp,16,0.106459161,0.076785878,6.67%,-27.87%,27.87%,"[2.58, 'h_mst', 'MULTIPLY']"
+A-n55-k9.vrp,17,0.106459161,0.131120584,13.33%,23.17%,23.17%,"[1.87, 'h_flow', 'MULTIPLY']"
+A-n55-k9.vrp,18,0.106459161,0.106459161,20.00%,0.00%,0.00%,['h_degree_average']
+A-n55-k9.vrp,19,0.106459161,0.106459161,26.67%,0.00%,0.00%,['h_degree_average']
+A-n55-k9.vrp,20,0.106459161,0.106459161,33.33%,0.00%,0.00%,['h_degree_average']

@@ -1,0 +1,36 @@
+Instance: 12.txt
+========================================
+
+Solver: CABS from DIDPPy v0.7.2-a
+Searched with beam size: 1, expanded: 50, elapsed time: 0.0083792
+New dual bound: 424, expanded: 50, elapsed time: 0.0084435
+New primal bound: 1708, expanded: 50, elapsed time: 0.0084534
+Searched with beam size: 2, expanded: 149, elapsed time: 0.0299739
+New dual bound: 450, expanded: 149, elapsed time: 0.0300356
+New primal bound: 1604, expanded: 149, elapsed time: 0.0302331
+Searched with beam size: 4, expanded: 340, elapsed time: 0.0573947
+New dual bound: 455, expanded: 340, elapsed time: 0.057423
+New primal bound: 1601, expanded: 340, elapsed time: 0.0575223
+Searched with beam size: 8, expanded: 704, elapsed time: 0.1057352
+New dual bound: 497, expanded: 704, elapsed time: 0.105773
+New primal bound: 1571, expanded: 704, elapsed time: 0.1059005
+Searched with beam size: 16, expanded: 1408, elapsed time: 0.2044307
+New dual bound: 530, expanded: 1408, elapsed time: 0.2044683
+New primal bound: 1567, expanded: 1408, elapsed time: 0.204578
+Searched with beam size: 32, expanded: 2761, elapsed time: 0.392232
+New dual bound: 588, expanded: 2761, elapsed time: 0.3922715
+New primal bound: 1555, expanded: 2761, elapsed time: 0.3923774
+Searched with beam size: 64, expanded: 5090, elapsed time: 0.7700884
+New dual bound: 615, expanded: 5090, elapsed time: 0.7701198
+New primal bound: 1551, expanded: 5090, elapsed time: 0.7702105
+Searched with beam size: 128, expanded: 8730, elapsed time: 1.2965035999999999
+New dual bound: 652, expanded: 8730, elapsed time: 1.2965364
+Searched with beam size: 256, expanded: 13781, elapsed time: 1.9985145
+New dual bound: 1170, expanded: 13781, elapsed time: 1.9985417
+Searched with beam size: 512, expanded: 20533, elapsed time: 2.8782867
+New dual bound: 1249, expanded: 20533, elapsed time: 2.8783303
+Searched with beam size: 1024, expanded: 28856, elapsed time: 3.8942149
+New dual bound: 1320, expanded: 28856, elapsed time: 3.8942568
+Searched with beam size: 2048, expanded: 37304, elapsed time: 4.9004679
+
+{"status": "success", "cost": 1551.0, "expanded": 37304, "generated": 41892, "duration": 4.901644468307495, "is_optimal": true}
