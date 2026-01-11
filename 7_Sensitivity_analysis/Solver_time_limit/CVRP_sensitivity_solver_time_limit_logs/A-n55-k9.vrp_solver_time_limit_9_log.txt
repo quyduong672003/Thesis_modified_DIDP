@@ -1,9 +1,9 @@
 --- Initialization: Generating Population of size 15 - 10 generations - solver limit at 9 seconds ---
-Generating Initial Population at time: Fri Jan  2 19:40:38 2026
+Generating Initial Population at time: Sat Jan  3 22:21:40 2026
 -> Seeding: 1 Random Terminal + 1 Simple Subtree
-Initial Population Generated at time: Fri Jan  2 19:43:04 2026
-Initialization time 145.8647096157074
-Initial Best Fitness: 0.10645916070958576
+Initial Population Generated at time: Sat Jan  3 22:24:02 2026
+Initialization time 141.57041335105896
+Initial Best Fitness: 0.22650024948313413
 Gen 1: Best Fitness = 0.10645916070958576 | Global Best = 0.10645916070958576
 Gen 2: Best Fitness = 0.10645916070958576 | Global Best = 0.10645916070958576
 Gen 3: Best Fitness = 0.10645916070958576 | Global Best = 0.10645916070958576
@@ -18,7 +18,7 @@ Gen 10: Best Fitness = 0.10645916070958576 | Global Best = 0.10645916070958576
 ========================================
       PERFORMANCE PROFILING REPORT      
 ========================================
-Total Runtime:    1487.5480 seconds
+Total Runtime:    1424.3138 seconds
 ========================================
 --- Evolution Completed ---
 

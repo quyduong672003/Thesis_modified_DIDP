@@ -1,0 +1,6 @@
+--- Initialization: Generating Population of size 15 - 10 generations - solver limit at 10 seconds ---
+Generating Initial Population at time: Sun Jan  4 17:31:35 2026
+-> Seeding: 1 Random Terminal + 1 Simple Subtree
+Initial Population Generated at time: Sun Jan  4 17:34:32 2026
+Initialization time 177.17201113700867
+Initial Best Fitness: 0.10645916070958576

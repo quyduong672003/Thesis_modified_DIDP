@@ -1,0 +1,1 @@
+Base case min_chromosome_length=2. Skipped execution. Logged original fitness: 0.1064591607095857

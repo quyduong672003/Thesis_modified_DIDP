@@ -1,0 +1,32 @@
+--- Initialization: Generating Population of size 15 - 10 generations - solver limit at 10 seconds ---
+Generating Initial Population at time: Sat Jan  3 11:32:18 2026
+-> Seeding: 1 Random Terminal + 1 Simple Subtree
+Initial Population Generated at time: Sat Jan  3 11:34:58 2026
+Initialization time 159.94261264801025
+Initial Best Fitness: 0.19864592223766855
+Gen 1: Best Fitness = 0.19864592223766855 | Global Best = 0.19864592223766855
+Gen 2: Best Fitness = 0.19864592223766855 | Global Best = 0.19864592223766855
+Gen 3: Best Fitness = 0.19864592223766855 | Global Best = 0.19864592223766855
+Gen 4: Best Fitness = 0.1822603582070978 | Global Best = 0.1822603582070978
+Subtree crossover produced invalid offspring: Invalid Chromosome: No heuristics found (Pure Constant).
+Using fallback parent chromosome for this subtree crossover.
+Gen 5: Best Fitness = 0.17300467668657446 | Global Best = 0.17300467668657446
+Gen 6: Best Fitness = 0.17300467668657446 | Global Best = 0.17300467668657446
+Subtree crossover produced invalid offspring: Invalid Chromosome: No heuristics found (Pure Constant).
+Using fallback parent chromosome for this subtree crossover.
+Uniform crossover produced invalid offspring: Invalid Chromosome: No heuristics found (Pure Constant).
+Using fallback parent chromosome for this uniform crossover.
+Subtree crossover produced invalid offspring: Invalid Chromosome: No heuristics found (Pure Constant).
+Using fallback parent chromosome for this subtree crossover.
+Gen 7: Best Fitness = 0.17300467668657446 | Global Best = 0.17300467668657446
+Gen 8: Best Fitness = 0.17300467668657446 | Global Best = 0.17300467668657446
+Gen 9: Best Fitness = 0.17300467668657446 | Global Best = 0.17300467668657446
+Gen 10: Best Fitness = 0.17300467668657446 | Global Best = 0.17300467668657446
+
+========================================
+      PERFORMANCE PROFILING REPORT      
+========================================
+Total Runtime:    1682.6500 seconds
+========================================
+--- Evolution Completed ---
+

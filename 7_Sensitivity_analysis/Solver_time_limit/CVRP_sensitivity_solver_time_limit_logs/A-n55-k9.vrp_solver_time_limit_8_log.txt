@@ -1,24 +1,26 @@
 --- Initialization: Generating Population of size 15 - 10 generations - solver limit at 8 seconds ---
-Generating Initial Population at time: Fri Jan  2 19:18:01 2026
+Generating Initial Population at time: Sat Jan  3 15:47:38 2026
 -> Seeding: 1 Random Terminal + 1 Simple Subtree
-Initial Population Generated at time: Fri Jan  2 19:20:15 2026
-Initialization time 133.7499499320984
-Initial Best Fitness: 0.18014957906904358
-Gen 1: Best Fitness = 0.10645916070958576 | Global Best = 0.10645916070958576
-Gen 2: Best Fitness = 0.10645916070958576 | Global Best = 0.10645916070958576
-Gen 3: Best Fitness = 0.10645916070958576 | Global Best = 0.10645916070958576
-Gen 4: Best Fitness = 0.10645916070958576 | Global Best = 0.10645916070958576
-Gen 5: Best Fitness = 0.10645916070958576 | Global Best = 0.10645916070958576
-Gen 6: Best Fitness = 0.10645916070958576 | Global Best = 0.10645916070958576
-Gen 7: Best Fitness = 0.10645916070958576 | Global Best = 0.10645916070958576
-Gen 8: Best Fitness = 0.10645916070958576 | Global Best = 0.10645916070958576
-Gen 9: Best Fitness = 0.10645916070958576 | Global Best = 0.10645916070958576
-Gen 10: Best Fitness = 0.10645916070958576 | Global Best = 0.10645916070958576
+Initial Population Generated at time: Sat Jan  3 15:49:49 2026
+Initialization time 130.90444493293762
+Initial Best Fitness: 0.18638508713497529
+Gen 1: Best Fitness = 0.1596856697625824 | Global Best = 0.1596856697625824
+Gen 2: Best Fitness = 0.1596856697625824 | Global Best = 0.1596856697625824
+Gen 3: Best Fitness = 0.1596856697625824 | Global Best = 0.1596856697625824
+Gen 4: Best Fitness = 0.1596856697625824 | Global Best = 0.1596856697625824
+Gen 5: Best Fitness = 0.1596856697625824 | Global Best = 0.1596856697625824
+Gen 6: Best Fitness = 0.1596856697625824 | Global Best = 0.1596856697625824
+Uniform crossover produced invalid offspring: Invalid Chromosome: No heuristics found (Pure Constant).
+Using fallback parent chromosome for this uniform crossover.
+Gen 7: Best Fitness = 0.1596856697625824 | Global Best = 0.1596856697625824
+Gen 8: Best Fitness = 0.1596856697625824 | Global Best = 0.1596856697625824
+Gen 9: Best Fitness = 0.1596856697625824 | Global Best = 0.1596856697625824
+Gen 10: Best Fitness = 0.1596856697625824 | Global Best = 0.1596856697625824
 
 ========================================
       PERFORMANCE PROFILING REPORT      
 ========================================
-Total Runtime:    1356.4272 seconds
+Total Runtime:    1254.3236 seconds
 ========================================
 --- Evolution Completed ---
 

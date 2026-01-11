@@ -1,0 +1,11 @@
+Instance number,Changed_parameter,Original_fitness,Sensitivity_fitness,percentage_of_change_of_parameter,percentage_of_change_of_fitness,absolute_percentage_of_change_of_fitness,sensitivity_chromosome
+A-n55-k9.vrp,0.05,0.1064591607095857,0.2350921352807339,-75.00%,120.83%,120.83%,"[9.97, 'h_eigen', 'MULTIPLY']"
+A-n55-k9.vrp,0.1,0.1064591607095857,0.10645916070958576,-50.00%,0.00%,0.00%,['h_degree_average']
+A-n55-k9.vrp,0.15,0.1064591607095857,0.0839084178027828,-25.00%,-21.18%,21.18%,"['h_flow', 'h_mst', 'ADD']"
+A-n55-k9.vrp,0.2,0.1064591607095857,0.1064591607095857,0.00%,0.00%,0.00%,['h_degree_average']
+A-n55-k9.vrp,0.25,0.1064591607095857,0.0839084178027828,25.00%,-21.18%,21.18%,"['h_flow', 'h_mst', 'ADD']"
+A-n55-k9.vrp,0.3,0.1064591607095857,0.10645916070958576,50.00%,0.00%,0.00%,['h_degree_average']
+A-n55-k9.vrp,0.35,0.1064591607095857,0.10645916070958576,75.00%,0.00%,0.00%,['h_degree_average']
+
+A-n55-k9.vrp,0.4,0.1064591607095857,0.10645916070958576,100.00%,0.00%,0.00%,['h_degree_average']
+A-n55-k9.vrp,0.5,0.1064591607095857,0.10645916070958576,150.00%,0.00%,0.00%,['h_degree_average']

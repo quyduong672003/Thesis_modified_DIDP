@@ -1,0 +1,32 @@
+--- Initialization: Generating Population of size 15 - 10 generations - solver limit at 10 seconds ---
+Generating Initial Population at time: Sun Jan  4 11:16:34 2026
+-> Seeding: 1 Random Terminal + 1 Simple Subtree
+Initial Population Generated at time: Sun Jan  4 11:19:11 2026
+Initialization time 157.0838646888733
+Initial Best Fitness: 0.1481039956888729
+Subtree crossover produced invalid offspring: Invalid Chromosome: No heuristics found (Pure Constant).
+Using fallback parent chromosome for this subtree crossover.
+Gen 1: Best Fitness = 0.1481039956888729 | Global Best = 0.1481039956888729
+Gen 2: Best Fitness = 0.1481039956888729 | Global Best = 0.1481039956888729
+Gen 3: Best Fitness = 0.1481039956888729 | Global Best = 0.1481039956888729
+Subtree crossover produced invalid offspring: Invalid Chromosome: No heuristics found (Pure Constant).
+Using fallback parent chromosome for this subtree crossover.
+Gen 4: Best Fitness = 0.1481039956888729 | Global Best = 0.1481039956888729
+Subtree crossover produced invalid offspring: Invalid Chromosome: No heuristics found (Pure Constant).
+Using fallback parent chromosome for this subtree crossover.
+Gen 5: Best Fitness = 0.1481039956888729 | Global Best = 0.1481039956888729
+Gen 6: Best Fitness = 0.1481039956888729 | Global Best = 0.1481039956888729
+Gen 7: Best Fitness = 0.1481039956888729 | Global Best = 0.1481039956888729
+Gen 8: Best Fitness = 0.1481039956888729 | Global Best = 0.1481039956888729
+Gen 9: Best Fitness = 0.1481039956888729 | Global Best = 0.1481039956888729
+Subtree crossover produced invalid offspring: Invalid Chromosome: No heuristics found (Pure Constant).
+Using fallback parent chromosome for this subtree crossover.
+Gen 10: Best Fitness = 0.1481039956888729 | Global Best = 0.1481039956888729
+
+========================================
+      PERFORMANCE PROFILING REPORT      
+========================================
+Total Runtime:    1686.7147 seconds
+========================================
+--- Evolution Completed ---
+

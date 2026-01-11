@@ -1,0 +1,1 @@
+Base case elitism_rate=0.1. Skipped execution. Logged original fitness: 0.1064591607095857
